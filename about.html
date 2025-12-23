@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Great African Adventure | Kenya's Leading Tourism Company</title>
+    <meta name="description"
+        content="Learn about Great African Adventure - Kenya's premier domestic and academic tourism company led by Mosese Ouma (CEO) and Austin Oluoch (Manager).">
+    <meta name="keywords"
+        content="about Great African Adventure, Kenya tourism company, Mosese Ouma, Austin Oluoch, academic tourism Kenya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== CSS RESET & GLOBAL STYLES ===== */
+        :root {
+            --primary-green: #1B5E20;
+            --primary-dark: #0D3B0D;
+            --secondary-gold: #FFD700;
+            --accent-red: #C62828;
+            --accent-orange: #FF9800;
+            --light-cream: #FFF8E1;
+            --light-gray: #F5F5F5;
+            --medium-gray: #757575;
+            --dark-gray: #263238;
+            --white: #FFFFFF;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-dark);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 36px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 8px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-gold);
+            font-size: 24px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .nav-menu a.active {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-dark);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(rgba(13, 59, 13, 0.9), rgba(27, 94, 32, 0.85)),
+                url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+
+        .page-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== COMPANY OVERVIEW ===== */
+        .company-overview {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .overview-text h2 {
+            color: var(--primary-dark);
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .overview-text p {
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .company-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 25px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, var(--light-gray), #E8F5E9);
+        }
+
+        .stat-box i {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 15px;
+        }
+
+        .stat-box h3 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .stat-box p {
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .overview-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .overview-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ===== LEADERSHIP SECTION ===== */
+        .leadership {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .leader-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .leader-header {
+            padding: 40px 30px 30px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            position: relative;
+        }
+
+        .leader-avatar {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            background: var(--secondary-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .leader-avatar i {
+            font-size: 60px;
+            color: var(--primary-dark);
+        }
+
+        .leader-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .leader-position {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .leader-contact {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .leader-contact a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .leader-contact a:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .leader-body {
+            padding: 30px;
+        }
+
+        .leader-bio {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .leader-expertise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .expertise-tag {
+            background: var(--light-gray);
+            color: var(--primary-dark);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* ===== VISION MISSION SECTION ===== */
+        .vision-mission {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .vm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .vm-card {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 50px 40px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vm-card:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(135deg, var(--light-gray), #E8F5E9);
+        }
+
+        .vm-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+        }
+
+        .vm-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            color: var(--white);
+            font-size: 32px;
+        }
+
+        .vm-card h3 {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .vm-card p {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* ===== CORE VALUES SECTION ===== */
+        .core-values {
+            padding: 100px 0;
+            background: linear-gradient(rgba(13, 59, 13, 0.95), rgba(27, 94, 32, 0.95)),
+                url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+        }
+
+        .core-values .section-title h2 {
+            color: var(--white);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-gold);
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--secondary-gold);
+            font-size: 28px;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .value-card p {
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        /* ===== TIMELINE SECTION ===== */
+        .timeline-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-green), var(--secondary-gold));
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+            width: 50%;
+            padding-right: 40px;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 50%;
+            padding-right: 0;
+            padding-left: 40px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            right: -10px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--secondary-gold);
+            border-radius: 50%;
+            border: 4px solid var(--white);
+            box-shadow: 0 0 0 4px var(--primary-green);
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            right: auto;
+            left: -10px;
+        }
+
+        .timeline-content {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .timeline-year {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .timeline-content p {
+            color: var(--medium-gray);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            color: var(--secondary-gold);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-orange);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 24px;
+        }
+
+        .footer-logo-text h3 {
+            color: var(--white);
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
+
+        .footer-logo-text h3:after {
+            display: none;
+        }
+
+        .footer-logo-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-column p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-gold);
+            transform: translateX(5px);
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            color: var(--secondary-gold);
+            font-size: 18px;
+            margin-top: 3px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .copyright a {
+            color: var(--secondary-gold);
+            text-decoration: none;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+            transition: var(--transition);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.4);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+
+            .page-hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                gap: 25px;
+                transition: left 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                overflow-y: auto;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .page-hero {
+                padding: 150px 0 80px;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-padding {
+                padding: 80px 0;
+            }
+
+            .timeline:before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-right: 0;
+                padding-left: 70px;
+            }
+
+            .timeline-item:nth-child(even) {
+                margin-left: 0;
+                padding-left: 70px;
+            }
+
+            .timeline-dot {
+                left: 20px;
+                right: auto;
+            }
+
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .company-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .leadership-grid,
+            .vm-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .leader-header {
+                padding: 30px 20px 20px;
+            }
+
+            .vm-card {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mountain-sun"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Great African Adventure</h1>
+                        <span>Kenya's Premier Tourism Company</span>
+                    </div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="domestic.html"><i class="fas fa-suitcase"></i> Domestic Tours</a></li>
+                    <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> Academic Tours</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                    <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety & Commitment</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                            Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Our Story & Leadership</h1>
+                <p>Learn about Great African Adventure - Kenya's leading domestic and academic tourism company, led by
+                    visionary leaders with a passion for Kenyan exploration and education.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMPANY OVERVIEW ===== -->
+    <section class="company-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Leading Kenya's Tourism Revolution</h2>
+                    <p>Founded in 2014, <strong>Great African Adventure</strong> has established itself as Kenya's
+                        premier tourism company specializing in domestic and academic tourism. Our journey began with a
+                        simple yet powerful vision: to make Kenya's incredible natural and cultural heritage accessible
+                        to all Kenyans.</p>
+
+                    <p>Today, we stand as a trusted partner for schools, universities, families, and organizations
+                        seeking meaningful travel experiences within Kenya. Our commitment to affordability, safety, and
+                        educational value has made us the preferred choice for institutions across the country.</p>
+
+                    <div class="company-stats">
+                        <div class="stat-box">
+                            <i class="fas fa-calendar-check"></i>
+                            <h3 data-count="1500">0</h3>
+                            <p>Tours Completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3 data-count="250">0</h3>
+                            <p>Partner Institutions</p>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-users"></i>
+                            <h3 data-count="50000">0</h3>
+                            <p>Happy Travelers</p>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-award"></i>
+                            <h3 data-count="12">0</h3>
+                            <p>Industry Awards</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-image">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e30bf7349d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Great African Adventure Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEADERSHIP SECTION ===== -->
+    <section class="leadership">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Leadership Team</h2>
+                <p>Meet the visionary leaders driving Kenya's tourism transformation</p>
+            </div>
+
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-header">
+                        <div class="leader-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="leader-name">Mosese Ouma</h3>
+                        <div class="leader-position">Chief Executive Officer (CEO)</div>
+                        <div class="leader-contact">
+                            <a href="mailto:mosese@greatafricanadventure.co.ke" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+254700123456" title="Call">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="#" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="leader-body">
+                        <p class="leader-bio">
+                            With over 15 years of experience in the tourism industry, Mosese brings visionary leadership
+                            and strategic direction to Great African Adventure. His passion for making Kenyan tourism
+                            accessible to locals has been the driving force behind our success.
+                        </p>
+                        <div class="leader-expertise">
+                            <span class="expertise-tag">Strategic Leadership</span>
+                            <span class="expertise-tag">Tourism Development</span>
+                            <span class="expertise-tag">Business Innovation</span>
+                            <span class="expertise-tag">Stakeholder Relations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-header">
+                        <div class="leader-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="leader-name">Austin Oluoch</h3>
+                        <div class="leader-position">Operations Manager</div>
+                        <div class="leader-contact">
+                            <a href="mailto:austin@greatafricanadventure.co.ke" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+254711987654" title="Call">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="#" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="leader-body">
+                        <p class="leader-bio">
+                            Austin oversees day-to-day operations with precision and expertise. With a background in
+                            educational tourism, he ensures our academic programs meet curriculum standards while
+                            maintaining the highest safety and quality standards.
+                        </p>
+                        <div class="leader-expertise">
+                            <span class="expertise-tag">Operations Management</span>
+                            <span class="expertise-tag">Academic Tourism</span>
+                            <span class="expertise-tag">Safety Protocols</span>
+                            <span class="expertise-tag">Quality Assurance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISION & MISSION SECTION ===== -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Guiding Principles</h2>
+                <p>The vision and mission that drive every decision we make</p>
+            </div>
+
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <div class="vm-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be Kenya's leading domestic and academic tourism company, inspiring Kenyans to explore, learn,
+                        and appreciate their country's natural and cultural heritage while promoting sustainable tourism
+                        practices that benefit local communities.</p>
+                </div>
+
+                <div class="vm-card">
+                    <div class="vm-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To deliver affordable, well-organized, and educational travel experiences within Kenya that
+                        support learning institutions, conservation efforts, and local communities while maintaining the
+                        highest standards of safety, professionalism, and customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORE VALUES SECTION ===== -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Values</h2>
+                <p>The principles that guide our operations and define our company culture</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Through Travel</h3>
+                    <p>We believe every journey should be a learning experience, combining adventure with educational
+                        value that complements formal learning.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Affordability & Accessibility</h3>
+                    <p>Making Kenyan tourism accessible to all through competitive pricing and flexible packages
+                        tailored to different budgets.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety & Professionalism</h3>
+                    <p>Maintaining the highest safety standards and professional conduct in all our operations, with
+                        comprehensive risk management protocols.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Cultural Appreciation</h3>
+                    <p>Promoting understanding and respect for Kenya's diverse cultures through authentic cultural
+                        exchanges and community engagement.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Responsibility</h3>
+                    <p>Practicing and promoting sustainable tourism that protects Kenya's natural beauty and supports
+                        conservation efforts.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Investing in local communities through employment, partnerships, and support for community
+                        development projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TIMELINE SECTION ===== -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey</h2>
+                <p>Milestones in our growth and development as Kenya's tourism leader</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2014</span>
+                        <h3>Company Foundation</h3>
+                        <p>Great African Adventure was founded by Mosese Ouma with a vision to make Kenyan tourism
+                            accessible to local communities and educational institutions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2016</span>
+                        <h3>Academic Tourism Focus</h3>
+                        <p>Developed specialized curriculum-aligned programs for schools and universities, becoming a
+                            preferred partner for educational institutions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2018</span>
+                        <h3>National Expansion</h3>
+                        <p>Expanded operations nationwide, establishing partnerships with over 50 schools and
+                            institutions across Kenya.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h3>Safety Certification</h3>
+                        <p>Achieved full compliance with Kenya Tourism Board regulations and implemented comprehensive
+                            safety protocols for all tours.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3>Sustainability Initiatives</h3>
+                        <p>Launched environmental responsibility programs and community support initiatives, becoming a
+                            leader in sustainable tourism.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <h3>Industry Recognition</h3>
+                        <p>Received multiple industry awards and recognition as Kenya's leading domestic and academic
+                            tourism company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section"
+        style="background: linear-gradient(135deg, var(--primary-dark), var(--primary-green)); color: var(--white); text-align: center; padding: 100px 0;">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Partner With Us</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">Join schools, institutions, and
+                    families who trust Great African Adventure for their Kenyan travel experiences.</p>
+
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn"
+                        style="background: var(--secondary-gold); color: var(--primary-dark);"><i
+                            class="fas fa-handshake"></i> Become a Partner</a>
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Schedule a
+                        Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-mountain-sun"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Great African Adventure</h3>
+                            <p>Kenya's Premier Tourism Company</p>
+                        </div>
+                    </a>
+                    <p>Leading Kenya's domestic and academic tourism industry with affordable, educational, and
+                        culturally enriching travel experiences since 2014.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Domestic Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> Academic Tours</a></li>
+                        <li><a href="destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="safety.html"><i class="fas fa-chevron-right"></i> Safety & Compliance</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Wildlife Safaris</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Beach Holidays</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Cultural Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> School Field Trips</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> University Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> Curriculum Programs</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Custom Tour Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Head Office</strong>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone Numbers</strong>
+                                <p>+254 700 123 456<br>+254 711 987 654</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Address</strong>
+                                <p>info@greatafricanadventure.co.ke<br>bookings@greatafricanadventure.co.ke</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2024</span> Great African Adventure. All Rights Reserved. | Led by
+                    <strong>Mosese Ouma (CEO)</strong> & Managed by <strong>Austin Oluoch</strong> | Business
+                    Registration No: GP-12345-2024</p>
+                <p style="margin-top: 10px;">Website designed for professional tourism services in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // DOM Ready Function
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                mobileMenuBtn.innerHTML = navMenu.classList.contains('active')
+                    ? '<i class="fas fa-times"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!navMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('mainHeader');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Back to top button visibility
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            // Animated Counter for Company Stats
+            const statNumbers = document.querySelectorAll('.stat-box h3');
+            const animatedCounters = [];
+
+            statNumbers.forEach((stat, index) => {
+                const target = parseInt(stat.getAttribute('data-count'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+
+                animatedCounters[index] = {
+                    element: stat,
+                    target: target,
+                    current: 0,
+                    increment: increment,
+                    animating: false
+                };
+            });
+
+            function animateCounter(counter) {
+                if (counter.current < counter.target) {
+                    counter.current += counter.increment;
+                    if (counter.current > counter.target) counter.current = counter.target;
+
+                    // Format numbers with commas
+                    const formattedNumber = Math.floor(counter.current).toLocaleString();
+                    counter.element.textContent = formattedNumber;
+
+                    requestAnimationFrame(() => animateCounter(counter));
+                }
+            }
+
+            // Intersection Observer for animated counters
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const index = Array.from(statNumbers).indexOf(entry.target);
+                        if (index !== -1 && !animatedCounters[index].animating) {
+                            animatedCounters[index].animating = true;
+                            animateCounter(animatedCounters[index]);
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            statNumbers.forEach(stat => observer.observe(stat));
+
+            // Timeline animation on scroll
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const timelineObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            // Initialize timeline items with hidden state
+            timelineItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                timelineObserver.observe(item);
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    if (href === '#') {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    } else if (href.startsWith('#') && document.querySelector(href)) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        const headerHeight = header.offsetHeight;
+
+                        window.scrollTo({
+                            top: targetElement.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Add active class to current page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Initialize with header check
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            }
+
+            // Value cards animation on scroll
+            const valueCards = document.querySelectorAll('.value-card');
+            const valueObserver = new IntersectionObserver(function (entries) {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            valueCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                valueObserver.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety & Commitment - Great African Adventure | Kenya Tourism Safety Standards</title>
+    <meta name="description"
+        content="Our comprehensive safety protocols, certifications, and commitment to responsible tourism in Kenya. Learn about our safety standards for domestic and academic tours.">
+    <meta name="keywords"
+        content="Kenya tourism safety, school trip safety, safari safety protocols, Kenya travel insurance, tourism compliance Kenya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== CSS RESET & GLOBAL STYLES ===== */
+        :root {
+            --primary-green: #1B5E20;
+            --primary-dark: #0D3B0D;
+            --secondary-gold: #FFD700;
+            --accent-red: #C62828;
+            --accent-orange: #FF9800;
+            --light-cream: #FFF8E1;
+            --light-gray: #F5F5F5;
+            --medium-gray: #757575;
+            --dark-gray: #263238;
+            --white: #FFFFFF;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-dark);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 36px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            color: var(--primary-dark);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 8px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-gold);
+            font-size: 24px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .nav-menu a.active {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-dark);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(rgba(13, 59, 13, 0.9), rgba(27, 94, 32, 0.85)),
+                url('https://images.unsplash.com/photo-1589552950456-75eeaf5c3f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+
+        .page-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .safety-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .safety-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .safety-badge:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-gold);
+        }
+
+        .safety-badge i {
+            font-size: 40px;
+            color: var(--secondary-gold);
+            margin-bottom: 15px;
+        }
+
+        .safety-badge span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* ===== SAFETY COMMITMENT SECTION ===== */
+        .commitment-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .commitment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .commitment-card {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .commitment-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .commitment-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary-green), var(--secondary-gold));
+        }
+
+        .commitment-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--white);
+            font-size: 32px;
+        }
+
+        .commitment-card h3 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .commitment-card p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .commitment-list {
+            list-style: none;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .commitment-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .commitment-list li:before {
+            content: "✓";
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-top: 3px;
+        }
+
+        /* ===== SAFETY PROTOCOLS SECTION ===== */
+        .protocols-section {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .protocols-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .protocol-tab {
+            padding: 15px 30px;
+            background: var(--white);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--medium-gray);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .protocol-tab:hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .protocol-tab.active {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-color: transparent;
+        }
+
+        .protocol-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .protocol-content.active {
+            display: block;
+        }
+
+        .protocol-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .protocol-item {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            transition: var(--transition);
+        }
+
+        .protocol-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .protocol-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .protocol-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .protocol-header h3 {
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .protocol-details ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .protocol-details li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .protocol-details li:before {
+            content: "•";
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-top: 3px;
+        }
+
+        /* ===== CERTIFICATIONS SECTION ===== */
+        .certifications-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(13, 59, 13, 0.95), rgba(27, 94, 32, 0.95)),
+                url('https://images.unsplash.com/photo-1589552950456-75eeaf5c3f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+        }
+
+        .certifications-section .section-title h2 {
+            color: var(--white);
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .certification-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-gold);
+        }
+
+        .certification-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--secondary-gold);
+            font-size: 32px;
+        }
+
+        .certification-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .certification-card p {
+            opacity: 0.9;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .certification-details {
+            text-align: left;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .certification-details li {
+            padding: 8px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .certification-details li:before {
+            content: "✓";
+            color: var(--secondary-gold);
+            font-weight: bold;
+            margin-top: 3px;
+        }
+
+        /* ===== RISK MANAGEMENT SECTION ===== */
+        .risk-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .risk-process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .risk-step {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--light-gray);
+            border-radius: 15px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .risk-step:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--white);
+            font-size: 1.2rem;
+        }
+
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(27, 94, 32, 0.1), rgba(255, 215, 0, 0.1));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--primary-green);
+            font-size: 32px;
+        }
+
+        .risk-step h3 {
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .risk-step p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+
+        /* ===== EMERGENCY PROCEDURES ===== */
+        .emergency-section {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .emergency-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 5px solid var(--accent-red);
+        }
+
+        .emergency-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .emergency-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .emergency-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-red), #E53935);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+        }
+
+        .emergency-header h3 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .emergency-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .emergency-content li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .emergency-content li strong {
+            color: var(--accent-red);
+            min-width: 120px;
+        }
+
+        /* ===== INSURANCE & COVERAGE ===== */
+        .insurance-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .insurance-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .insurance-card {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .insurance-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-green);
+            box-shadow: var(--shadow);
+        }
+
+        .insurance-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--white);
+            font-size: 32px;
+        }
+
+        .insurance-card h3 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .insurance-card p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .insurance-features {
+            text-align: left;
+            margin-top: 25px;
+        }
+
+        .insurance-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .insurance-features li:before {
+            content: "✓";
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        /* ===== SAFETY DOCUMENTS ===== */
+        .documents-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+            color: var(--white);
+        }
+
+        .documents-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .document-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .document-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-gold);
+        }
+
+        .document-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--secondary-gold);
+            font-size: 28px;
+        }
+
+        .document-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .document-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            color: var(--secondary-gold);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-orange);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 24px;
+        }
+
+        .footer-logo-text h3 {
+            color: var(--white);
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
+
+        .footer-logo-text h3:after {
+            display: none;
+        }
+
+        .footer-logo-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-column p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-gold);
+            transform: translateX(5px);
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            color: var(--secondary-gold);
+            font-size: 18px;
+            margin-top: 3px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .copyright a {
+            color: var(--secondary-gold);
+            text-decoration: none;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+            transition: var(--transition);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.4);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+
+            .page-hero h1 {
+                font-size: 3rem;
+            }
+
+            .commitment-grid,
+            .protocol-grid,
+            .certifications-grid,
+            .emergency-grid,
+            .insurance-cards,
+            .documents-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                gap: 25px;
+                transition: left 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                overflow-y: auto;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .page-hero {
+                padding: 150px 0 80px;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-padding {
+                padding: 80px 0;
+            }
+
+            .safety-badges {
+                gap: 20px;
+            }
+
+            .safety-badge {
+                width: 130px;
+                height: 130px;
+            }
+
+            .protocols-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .protocol-tab {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .risk-process {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .safety-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .safety-badge {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .commitment-grid,
+            .protocol-grid,
+            .certifications-grid,
+            .emergency-grid,
+            .insurance-cards,
+            .documents-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mountain-sun"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Great African Adventure</h1>
+                        <span>Kenya's Premier Tourism Company</span>
+                    </div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="domestic.html"><i class="fas fa-suitcase"></i> Domestic Tours</a></li>
+                    <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> Academic Tours</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                    <li><a href="safety.html" class="active"><i class="fas fa-shield-alt"></i> Safety & Commitment</a>
+                    </li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                            Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Safety & Our Commitment</h1>
+                <p>Your safety is our top priority. Discover our comprehensive safety protocols, certifications, and
+                    commitment to responsible tourism in Kenya.</p>
+                <a href="#commitment" class="btn btn-secondary" style="margin-top: 20px;"><i
+                        class="fas fa-shield-alt"></i> Explore Our Safety Standards</a>
+
+                <div class="safety-badges">
+                    <div class="safety-badge">
+                        <i class="fas fa-award"></i>
+                        <span>KTB Certified</span>
+                    </div>
+                    <div class="safety-badge">
+                        <i class="fas fa-user-shield"></i>
+                        <span>First Aid Certified</span>
+                    </div>
+                    <div class="safety-badge">
+                        <i class="fas fa-car-crash"></i>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="safety-badge">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>COVID-19 Safe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SAFETY COMMITMENT SECTION ===== -->
+    <section class="commitment-section" id="commitment">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Safety Commitment</h2>
+                <p>We are committed to providing the highest safety standards for all our tours, with special focus on
+                    school trips and family adventures</p>
+            </div>
+
+            <div class="commitment-grid">
+                <div class="commitment-card">
+                    <div class="commitment-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Certified Guides & Staff</h3>
+                    <p>All our guides and staff undergo rigorous training and certification to ensure your safety and
+                        enjoyment.</p>
+                    <ul class="commitment-list">
+                        <li>First Aid & CPR Certified</li>
+                        <li>Wilderness First Responder Training</li>
+                        <li>Child Protection Certification</li>
+                        <li>Regular Safety Refresher Courses</li>
+                        <li>Background Checks & Clearances</li>
+                    </ul>
+                </div>
+
+                <div class="commitment-card">
+                    <div class="commitment-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Preparedness</h3>
+                    <p>Comprehensive emergency plans and protocols for all scenarios, from minor incidents to major
+                        emergencies.</p>
+                    <ul class="commitment-list">
+                        <li>Satellite Communication Systems</li>
+                        <li>Emergency Medical Evacuation Plans</li>
+                        <li>Partnerships with Local Medical Facilities</li>
+                        <li>24/7 Emergency Support Line</li>
+                        <li>Regular Emergency Drills</li>
+                    </ul>
+                </div>
+
+                <div class="commitment-card">
+                    <div class="commitment-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicle & Equipment Safety</h3>
+                    <p>Regular maintenance and safety checks on all vehicles and equipment to ensure reliable
+                        performance.</p>
+                    <ul class="commitment-list">
+                        <li>Regular Vehicle Safety Inspections</li>
+                        <li>GPS Tracking on All Vehicles</li>
+                        <li>Comprehensive Safety Equipment</li>
+                        <li>Regular Driver Training & Assessment</li>
+                        <li>Emergency Repair Kits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SAFETY PROTOCOLS SECTION ===== -->
+    <section class="protocols-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Safety Protocols & Procedures</h2>
+                <p>Detailed safety protocols for different types of tours and activities</p>
+            </div>
+
+            <div class="protocols-tabs" id="protocolTabs">
+                <button class="protocol-tab active" data-protocol="safari">
+                    <i class="fas fa-paw"></i> Safari Safety
+                </button>
+                <button class="protocol-tab" data-protocol="academic">
+                    <i class="fas fa-graduation-cap"></i> Academic Tours
+                </button>
+                <button class="protocol-tab" data-protocol="beach">
+                    <i class="fas fa-umbrella-beach"></i> Beach & Water
+                </button>
+                <button class="protocol-tab" data-protocol="mountain">
+                    <i class="fas fa-mountain"></i> Mountain Adventures
+                </button>
+            </div>
+
+            <div class="protocol-content active" id="safariProtocol">
+                <div class="protocol-grid">
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">1</div>
+                            <h3>Wildlife Interaction</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Maintain safe distance from all wildlife (minimum 25 meters)</li>
+                                <li>Stay inside vehicles during game drives</li>
+                                <li>No feeding or provoking animals</li>
+                                <li>Follow guide instructions at all times</li>
+                                <li>Use designated viewing areas only</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">2</div>
+                            <h3>Vehicle Safety</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>4x4 vehicles with roll bars and safety features</li>
+                                <li>Regular mechanical checks and maintenance</li>
+                                <li>Emergency communication systems</li>
+                                <li>First aid kits in all vehicles</li>
+                                <li>Experienced drivers with park knowledge</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">3</div>
+                            <h3>Camp & Lodge Safety</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>24/7 security at all accommodations</li>
+                                <li>Electric fencing around properties</li>
+                                <li>Escorted movement after dark</li>
+                                <li>Emergency evacuation plans</li>
+                                <li>Fire safety equipment and procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="protocol-content" id="academicProtocol">
+                <div class="protocol-grid">
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">1</div>
+                            <h3>Student Supervision</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>1:10 guide-to-student ratio minimum</li>
+                                <li>Roll call procedures every 2 hours</li>
+                                <li>Buddy system implementation</li>
+                                <li>Designated meeting points</li>
+                                <li>Constant headcount monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">2</div>
+                            <h3>Educational Safety</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Curriculum-aligned safety briefings</li>
+                                <li>Age-appropriate risk assessments</li>
+                                <li>Special needs accommodations</li>
+                                <li>Parental consent and medical forms</li>
+                                <li>Teacher involvement in safety planning</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">3</div>
+                            <h3>Transport Safety</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>School bus safety standards</li>
+                                <li>Seat belts for all passengers</li>
+                                <li>Experienced school trip drivers</li>
+                                <li>Regular rest stops and hydration</li>
+                                <li>Emergency contact procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="protocol-content" id="beachProtocol">
+                <div class="protocol-grid">
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">1</div>
+                            <h3>Water Safety</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Lifeguard presence at all activities</li>
+                                <li>Swimming ability assessment</li>
+                                <li>Life jacket requirements</li>
+                                <li>Tide and current monitoring</li>
+                                <li>Designated swimming areas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">2</div>
+                            <h3>Marine Activities</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Certified equipment and operators</li>
+                                <li>Weather condition monitoring</li>
+                                <li>Briefings before all activities</li>
+                                <li>Emergency boat procedures</li>
+                                <li>Marine life interaction guidelines</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">3</div>
+                            <h3>Sun & Heat Protection</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Regular hydration breaks</li>
+                                <li>Shaded rest areas provided</li>
+                                <li>Sunscreen application reminders</li>
+                                <li>Heat exhaustion prevention</li>
+                                <li>Appropriate clothing guidance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="protocol-content" id="mountainProtocol">
+                <div class="protocol-grid">
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">1</div>
+                            <h3>Altitude Safety</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Gradual altitude acclimatization</li>
+                                <li>Altitude sickness monitoring</li>
+                                <li>Emergency oxygen available</li>
+                                <li>Regular health checks</li>
+                                <li>Descent procedures for emergencies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">2</div>
+                            <h3>Mountain Equipment</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Certified climbing equipment</li>
+                                <li>Regular gear inspections</li>
+                                <li>Proper clothing requirements</li>
+                                <li>Emergency communication devices</li>
+                                <li>Weather-appropriate gear</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="protocol-item">
+                        <div class="protocol-header">
+                            <div class="protocol-number">3</div>
+                            <h3>Guide Qualifications</h3>
+                        </div>
+                        <div class="protocol-details">
+                            <ul>
+                                <li>Certified mountain guides</li>
+                                <li>First aid and rescue training</li>
+                                <li>Route knowledge and experience</li>
+                                <li>Weather prediction skills</li>
+                                <li>Emergency response certification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Certifications & Accreditations</h2>
+                <p>Officially recognized by leading tourism and safety organizations in Kenya</p>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Kenya Tourism Board</h3>
+                    <p>Fully licensed and regulated by Kenya's official tourism regulatory body.</p>
+                    <ul class="certification-details">
+                        <li>Tour Operator License No: TO/1234/2024</li>
+                        <li>Annual safety compliance audits</li>
+                        <li>Regular inspections and approvals</li>
+                        <li>Code of conduct adherence</li>
+                    </ul>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Standards</h3>
+                    <p>Certified under international safety standards for tourism operations.</p>
+                    <ul class="certification-details">
+                        <li>ISO 45001:2018 Certified</li>
+                        <li>First Aid & Emergency Response</li>
+                        <li>Vehicle Safety Standards</li>
+                        <li>Environmental Safety Compliance</li>
+                    </ul>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Industry Partnerships</h3>
+                    <p>Member of leading tourism associations and partnerships.</p>
+                    <ul class="certification-details">
+                        <li>Kenya Association of Tour Operators</li>
+                        <li>Eco-Tourism Society of Kenya</li>
+                        <li>Kenya Wildlife Service Partner</li>
+                        <li>National Museums of Kenya Partner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RISK MANAGEMENT SECTION ===== -->
+    <section class="risk-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Risk Management Process</h2>
+                <p>Our comprehensive approach to identifying, assessing, and mitigating risks</p>
+            </div>
+
+            <div class="risk-process">
+                <div class="risk-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Risk Identification</h3>
+                    <p>Systematic identification of potential risks across all tour activities, destinations, and
+                        operations.</p>
+                </div>
+
+                <div class="risk-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Risk Assessment</h3>
+                    <p>Detailed assessment of identified risks based on likelihood and potential impact severity.</p>
+                </div>
+
+                <div class="risk-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Risk Mitigation</h3>
+                    <p>Development and implementation of control measures to reduce risks to acceptable levels.</p>
+                </div>
+
+                <div class="risk-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Monitoring & Review</h3>
+                    <p>Continuous monitoring of risk controls and regular review of risk management effectiveness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EMERGENCY PROCEDURES ===== -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Emergency Procedures</h2>
+                <p>Clear protocols for handling emergencies during tours</p>
+            </div>
+
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <div class="emergency-header">
+                        <div class="emergency-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3>Medical Emergencies</h3>
+                    </div>
+                    <div class="emergency-content">
+                        <ul>
+                            <li><strong>First Response:</strong> Immediate first aid by certified guides</li>
+                            <li><strong>Communication:</strong> Satellite phone contact with base</li>
+                            <li><strong>Evacuation:</strong> Arrangement of medical evacuation if needed</li>
+                            <li><strong>Hospital:</strong> Transport to nearest medical facility</li>
+                            <li><strong>Family Contact:</strong> Notification of emergency contacts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="emergency-card">
+                    <div class="emergency-header">
+                        <div class="emergency-icon">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                        <h3>Vehicle Incidents</h3>
+                    </div>
+                    <div class="emergency-content">
+                        <ul>
+                            <li><strong>Safety First:</strong> Move to safe location if possible</li>
+                            <li><strong>Assessment:</strong> Check for injuries and damage</li>
+                            <li><strong>Backup:</strong> Dispatch backup vehicle immediately</li>
+                            <li><strong>Repair:</strong> On-site repair or tow arrangements</li>
+                            <li><strong>Reporting:</strong> Incident documentation and reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="emergency-card">
+                    <div class="emergency-header">
+                        <div class="emergency-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Natural Events</h3>
+                    </div>
+                    <div class="emergency-content">
+                        <ul>
+                            <li><strong>Weather Monitoring:</strong> Continuous weather updates</li>
+                            <li><strong>Safe Shelter:</strong> Move to designated safe locations</li>
+                            <li><strong>Communication:</strong> Regular updates to base camp</li>
+                            <li><strong>Evacuation Plan:</strong> Activation of evacuation procedures</li>
+                            <li><strong>Post-Event:</strong> Damage assessment and recovery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INSURANCE & COVERAGE ===== -->
+    <section class="insurance-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Insurance & Coverage</h2>
+                <p>Comprehensive insurance coverage for all our clients</p>
+            </div>
+
+            <div class="insurance-cards">
+                <div class="insurance-card">
+                    <div class="insurance-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Medical Insurance</h3>
+                    <p>Comprehensive medical coverage for all tour participants during the trip duration.</p>
+                    <ul class="insurance-features">
+                        <li>Emergency medical treatment</li>
+                        <li>Hospitalization coverage</li>
+                        <li>Medical evacuation</li>
+                        <li>Repatriation of remains</li>
+                        <li>Dental emergency coverage</li>
+                    </ul>
+                </div>
+
+                <div class="insurance-card">
+                    <div class="insurance-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicle Insurance</h3>
+                    <p>Full coverage for all transportation during tours, including third-party liability.</p>
+                    <ul class="insurance-features">
+                        <li>Comprehensive vehicle insurance</li>
+                        <li>Third-party liability coverage</li>
+                        <li>Passenger injury coverage</li>
+                        <li>Vehicle recovery and repair</li>
+                        <li>Alternative transport arrangements</li>
+                    </ul>
+                </div>
+
+                <div class="insurance-card">
+                    <div class="insurance-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Trip Protection</h3>
+                    <p>Protection against trip cancellations, interruptions, and other travel disruptions.</p>
+                    <ul class="insurance-features">
+                        <li>Trip cancellation coverage</li>
+                        <li>Trip interruption protection</li>
+                        <li>Baggage loss coverage</li>
+                        <li>Travel delay compensation</li>
+                        <li>Missed connection coverage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SAFETY DOCUMENTS ===== -->
+    <section class="documents-section">
+        <div class="container">
+            <div class="documents-container">
+                <div class="section-title">
+                    <h2>Safety Documents & Resources</h2>
+                    <p>Download our safety documents and resources for schools and groups</p>
+                </div>
+
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>School Safety Checklist</h3>
+                        <p>Comprehensive checklist for schools planning educational trips with us.</p>
+                        <button class="btn btn-secondary" style="width: 100%;">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Parental Consent Form</h3>
+                        <p>Standard consent form for parents/guardians of students participating in tours.</p>
+                        <button class="btn btn-secondary" style="width: 100%;">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3>Medical Information Form</h3>
+                        <p>Form for collecting essential medical information for tour participants.</p>
+                        <button class="btn btn-secondary" style="width: 100%;">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section"
+        style="background: linear-gradient(135deg, var(--primary-dark), var(--primary-green)); color: var(--white); text-align: center; padding: 100px 0;">
+        <div class="container">
+            <div class="cta-content">
+                <h2 style="font-size: 2.8rem; margin-bottom: 20px;">Have Safety Questions?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">Contact our safety team for detailed
+                    information about our protocols and certifications.</p>
+
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-secondary"><i class="fas fa-question-circle"></i> Ask Safety
+                        Questions</a>
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-file-alt"></i> Request Safety
+                        Documents</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-mountain-sun"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Great African Adventure</h3>
+                            <p>Kenya's Premier Tourism Company</p>
+                        </div>
+                    </a>
+                    <p>Leading Kenya's domestic and academic tourism industry with affordable, educational, and
+                        culturally enriching travel experiences since 2014.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Domestic Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> Academic Tours</a></li>
+                        <li><a href="destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="safety.html"><i class="fas fa-chevron-right"></i> Safety & Compliance</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Safety Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Safety Protocols</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Emergency Procedures</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Insurance Coverage</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Risk Management</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Certifications</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Safety Documents</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> COVID-19 Safety</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Head Office</strong>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone Numbers</strong>
+                                <p>+254 700 123 456<br>+254 711 987 654</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Address</strong>
+                                <p>info@greatafricanadventure.co.ke<br>safety@greatafricanadventure.co.ke</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2024</span> Great African Adventure. All Rights Reserved. | Led by
+                    <strong>Mosese Ouma (CEO)</strong> & Managed by <strong>Austin Oluoch</strong> | Business
+                    Registration No: GP-12345-2024</p>
+                <p style="margin-top: 10px;">Website designed for professional tourism services in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // DOM Ready Function
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                mobileMenuBtn.innerHTML = navMenu.classList.contains('active')
+                    ? '<i class="fas fa-times"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!navMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('mainHeader');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Back to top button visibility
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            // Safety Protocol Tabs
+            const protocolTabs = document.querySelectorAll('.protocol-tab');
+            const protocolContents = document.querySelectorAll('.protocol-content');
+
+            protocolTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const protocol = this.getAttribute('data-protocol');
+
+                    // Remove active class from all tabs and contents
+                    protocolTabs.forEach(t => t.classList.remove('active'));
+                    protocolContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(`${protocol}Protocol`).classList.add('active');
+                });
+            });
+
+            // Safety Badges Animation
+            const safetyBadges = document.querySelectorAll('.safety-badge');
+            safetyBadges.forEach((badge, index) => {
+                badge.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Download Button Simulation
+            document.querySelectorAll('.btn-secondary').forEach(button => {
+                if (button.textContent.includes('Download')) {
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        // In a real application, this would trigger a file download
+                        // For demo purposes, we'll show a message
+                        const documentName = this.closest('.document-card').querySelector('h3').textContent;
+                        alert(`Thank you for requesting: ${documentName}\n\nIn a real application, this would download the PDF file. For this demo, please contact safety@greatafricanadventure.co.ke to request the actual document.`);
+                    });
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    if (href === '#') {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    } else if (href.startsWith('#') && document.querySelector(href)) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        const headerHeight = header.offsetHeight;
+
+                        window.scrollTo({
+                            top: targetElement.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Add active class to current page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Initialize with header check
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            }
+
+            // Animate elements on scroll
+            const animateOnScroll = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe commitment cards
+            document.querySelectorAll('.commitment-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(card);
+            });
+
+            // Observe certification cards
+            document.querySelectorAll('.certification-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(card);
+            });
+
+            // Observe risk steps
+            document.querySelectorAll('.risk-step').forEach(step => {
+                step.style.opacity = '0';
+                step.style.transform = 'translateY(30px)';
+                step.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(step);
+            });
+
+            // Observe emergency cards
+            document.querySelectorAll('.emergency-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(card);
+            });
+
+            // Observe insurance cards
+            document.querySelectorAll('.insurance-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(card);
+            });
+
+            // Observe document cards
+            document.querySelectorAll('.document-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(card);
+            });
+
+            // Observe protocol items
+            document.querySelectorAll('.protocol-item').forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(item);
+            });
+        });
+    </script>
+</body>
+
+</html>

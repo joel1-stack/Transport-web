@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Great African Adventure | Kenya Tourism Photos & Videos</title>
+    <meta name="description"
+        content="Photo gallery of Great African Adventure tours - wildlife safaris, beach holidays, school trips, and cultural experiences across Kenya.">
+    <meta name="keywords"
+        content="Kenya tourism photos, safari gallery, Kenya travel pictures, school trip photos, wildlife photography Kenya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== CSS RESET & GLOBAL STYLES ===== */
+        :root {
+            --primary-green: #1B5E20;
+            --primary-dark: #0D3B0D;
+            --secondary-gold: #FFD700;
+            --accent-red: #C62828;
+            --accent-orange: #FF9800;
+            --light-cream: #FFF8E1;
+            --light-gray: #F5F5F5;
+            --medium-gray: #757575;
+            --dark-gray: #263238;
+            --white: #FFFFFF;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-dark);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 36px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            color: var(--primary-dark);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 8px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-gold);
+            font-size: 24px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .nav-menu a.active {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-dark);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(rgba(13, 59, 13, 0.9), rgba(27, 94, 32, 0.85)),
+                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+
+        .page-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-gold);
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .stat-text {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* ===== GALLERY FILTERS ===== */
+        .filters-section {
+            padding: 60px 0 30px;
+            background: var(--light-gray);
+        }
+
+        .filters-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .filters-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .filters-title h2 {
+            color: var(--primary-dark);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .filters-title p {
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .filter-tab {
+            padding: 12px 28px;
+            background: var(--white);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            font-weight: 600;
+            color: var(--medium-gray);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-tab:hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .filter-tab.active {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-color: transparent;
+        }
+
+        /* ===== GALLERY GRID ===== */
+        .gallery-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 300px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: var(--white);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-category {
+            display: inline-block;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            color: var(--primary-dark);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .gallery-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .gallery-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* ===== LIGHTBOX MODAL ===== */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .lightbox-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-content {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            max-height: 90vh;
+        }
+
+        .lightbox-image {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .lightbox-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+            color: var(--white);
+        }
+
+        .lightbox-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .lightbox-info p {
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .lightbox-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-lightbox:hover {
+            color: var(--secondary-gold);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .lightbox-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-btn:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+        }
+
+        /* ===== VIDEO GALLERY ===== */
+        .video-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(13, 59, 13, 0.95), rgba(27, 94, 32, 0.95)),
+                url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+        }
+
+        .video-section .section-title h2 {
+            color: var(--white);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .video-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 250px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 215, 0, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 24px;
+            transition: var(--transition);
+        }
+
+        .video-card:hover .video-play-btn {
+            background: var(--secondary-gold);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+
+        .video-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .video-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* ===== CLIENT ALBUMS ===== */
+        .albums-section {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .album-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .album-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .album-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .album-content {
+            padding: 25px;
+        }
+
+        .album-school {
+            display: inline-block;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            color: var(--primary-dark);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .album-title {
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .album-description {
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .album-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .album-photos {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+        }
+
+        /* ===== SHARE GALLERY ===== */
+        .share-section {
+            padding: 100px 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .share-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 60px;
+        }
+
+        .share-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            color: var(--white);
+            font-size: 40px;
+        }
+
+        .share-container h2 {
+            color: var(--primary-dark);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .share-container p {
+            color: var(--medium-gray);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .hashtags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .hashtag {
+            background: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            color: var(--secondary-gold);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-orange);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 24px;
+        }
+
+        .footer-logo-text h3 {
+            color: var(--white);
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
+
+        .footer-logo-text h3:after {
+            display: none;
+        }
+
+        .footer-logo-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-column p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-gold);
+            transform: translateX(5px);
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            color: var(--secondary-gold);
+            font-size: 18px;
+            margin-top: 3px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .copyright a {
+            color: var(--secondary-gold);
+            text-decoration: none;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+            transition: var(--transition);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.4);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+
+            .page-hero h1 {
+                font-size: 3rem;
+            }
+
+            .gallery-grid,
+            .video-grid,
+            .albums-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                gap: 25px;
+                transition: left 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                overflow-y: auto;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .page-hero {
+                padding: 150px 0 80px;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-padding {
+                padding: 80px 0;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .share-container {
+                padding: 40px 20px;
+            }
+
+            .gallery-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .filter-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filter-tab {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .gallery-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid,
+            .albums-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lightbox-nav {
+                padding: 0 10px;
+            }
+
+            .lightbox-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mountain-sun"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Great African Adventure</h1>
+                        <span>Kenya's Premier Tourism Company</span>
+                    </div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="domestic.html"><i class="fas fa-suitcase"></i> Domestic Tours</a></li>
+                    <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> Academic Tours</a></li>
+                    <li><a href="destinations.html"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                    <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety & Commitment</a></li>
+                    <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                            Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Our Gallery of Adventures</h1>
+                <p>Experience Kenya through the eyes of our travelers. Browse photos and videos from our wildlife
+                    safaris, beach holidays, school trips, and cultural experiences.</p>
+
+                <div class="gallery-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2500">0</div>
+                        <div class="stat-text">Photos in Gallery</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-text">Client Albums</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="75">0</div>
+                        <div class="stat-text">Featured Videos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-text">Years of Memories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY FILTERS ===== -->
+    <section class="filters-section" id="gallery">
+        <div class="container">
+            <div class="filters-title">
+                <h2>Explore Our Gallery</h2>
+                <p>Browse photos from our various tour categories and destinations</p>
+            </div>
+
+            <div class="filter-tabs" id="galleryTabs">
+                <button class="filter-tab active" data-category="all">
+                    <i class="fas fa-images"></i> All Photos
+                </button>
+                <button class="filter-tab" data-category="wildlife">
+                    <i class="fas fa-paw"></i> Wildlife Safari
+                </button>
+                <button class="filter-tab" data-category="beach">
+                    <i class="fas fa-umbrella-beach"></i> Beach Holidays
+                </button>
+                <button class="filter-tab" data-category="academic">
+                    <i class="fas fa-graduation-cap"></i> School Trips
+                </button>
+                <button class="filter-tab" data-category="cultural">
+                    <i class="fas fa-landmark"></i> Cultural Tours
+                </button>
+                <button class="filter-tab" data-category="adventure">
+                    <i class="fas fa-hiking"></i> Adventure Tours
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY GRID ===== -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be loaded dynamically by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO GALLERY ===== -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Video Highlights</h2>
+                <p>Watch memorable moments from our tours and adventures across Kenya</p>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Maasai Mara Safari" class="video-thumbnail">
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-overlay">
+                        <h3>Maasai Mara Safari Adventure</h3>
+                        <p>3-day wildlife experience with Great African Adventure</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e30bf7349d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Diani Beach Retreat" class="video-thumbnail">
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-overlay">
+                        <h3>Diani Beach Coastal Retreat</h3>
+                        <p>Beach holiday experience on Kenya's coast</p>
+                    </div>
+                </div>
+
+                <div class="video-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <img src="https://images.unsplash.com/photo-1589552950456-75eeaf5c3f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="School Biology Trip" class="video-thumbnail">
+                    <div class="video-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-overlay">
+                        <h3>School Biology Field Study</h3>
+                        <p>Educational tour for secondary school students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLIENT ALBUMS ===== -->
+    <section class="albums-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Albums</h2>
+                <p>Browse photo collections from schools and groups who have traveled with us</p>
+            </div>
+
+            <div class="albums-grid">
+                <div class="album-card">
+                    <img src="https://images.unsplash.com/photo-1581579431537-2d6175dd212b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Nairobi High School Trip" class="album-image">
+                    <div class="album-content">
+                        <span class="album-school">Nairobi High School</span>
+                        <h3 class="album-title">Biology Field Trip 2024</h3>
+                        <p class="album-description">A 3-day educational tour to Maasai Mara focusing on wildlife
+                            conservation and ecology.</p>
+                        <div class="album-stats">
+                            <div class="album-photos">
+                                <i class="fas fa-images"></i>
+                                <span>142 Photos</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Album</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="University of Nairobi" class="album-image">
+                    <div class="album-content">
+                        <span class="album-school">University of Nairobi</span>
+                        <h3 class="album-title">Environmental Studies Tour</h3>
+                        <p class="album-description">5-day university field trip focusing on environmental conservation
+                            and sustainability.</p>
+                        <div class="album-stats">
+                            <div class="album-photos">
+                                <i class="fas fa-images"></i>
+                                <span>89 Photos</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Album</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <img src="https://images.unsplash.com/photo-1566134985867-1e1a9f5ac0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Family Safari Adventure" class="album-image">
+                    <div class="album-content">
+                        <span class="album-school">Family Tour</span>
+                        <h3 class="album-title">Kamau Family Safari</h3>
+                        <p class="album-description">Memorable 4-day family safari adventure in Amboseli National Park.
+                        </p>
+                        <div class="album-stats">
+                            <div class="album-photos">
+                                <i class="fas fa-images"></i>
+                                <span>67 Photos</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Album</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SHARE GALLERY ===== -->
+    <section class="share-section">
+        <div class="container">
+            <div class="share-container">
+                <div class="share-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h2>Share Your Adventure</h2>
+                <p>Have you traveled with Great African Adventure? Share your photos and videos with us! Tag us on
+                    social media or send us your memorable moments. We'd love to feature your experiences in our
+                    gallery.</p>
+
+                <div class="hashtags">
+                    <div class="hashtag">#GreatAfricanAdventure</div>
+                    <div class="hashtag">#KenyaSafari</div>
+                    <div class="hashtag">#AcademicTourism</div>
+                    <div class="hashtag">#ExploreKenya</div>
+                    <div class="hashtag">#DomesticTourismKE</div>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 30px;">
+                    <i class="fas fa-share-alt"></i> Share Your Photos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LIGHTBOX MODAL ===== -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="close-lightbox" id="closeLightbox">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="" class="lightbox-image">
+
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <div class="lightbox-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> <span id="lightboxLocation"></span></span>
+                    <span><i class="fas fa-calendar-alt"></i> <span id="lightboxDate"></span></span>
+                </div>
+            </div>
+
+            <div class="lightbox-nav">
+                <button class="lightbox-btn" id="prevLightbox">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-btn" id="nextLightbox">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-mountain-sun"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Great African Adventure</h3>
+                            <p>Kenya's Premier Tourism Company</p>
+                        </div>
+                    </a>
+                    <p>Leading Kenya's domestic and academic tourism industry with affordable, educational, and
+                        culturally enriching travel experiences since 2014.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Domestic Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> Academic Tours</a></li>
+                        <li><a href="destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="safety.html"><i class="fas fa-chevron-right"></i> Safety & Compliance</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Wildlife Safaris</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Beach Holidays</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Cultural Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> School Field Trips</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> University Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> Curriculum Programs</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Custom Tour Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Head Office</strong>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone Numbers</strong>
+                                <p>+254 700 123 456<br>+254 711 987 654</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Address</strong>
+                                <p>info@greatafricanadventure.co.ke<br>bookings@greatafricanadventure.co.ke</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2024</span> Great African Adventure. All Rights Reserved. | Led by
+                    <strong>Mosese Ouma (CEO)</strong> & Managed by <strong>Austin Oluoch</strong> | Business
+                    Registration No: GP-12345-2024
+                </p>
+                <p style="margin-top: 10px;">Website designed for professional tourism services in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // DOM Ready Function
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                mobileMenuBtn.innerHTML = navMenu.classList.contains('active')
+                    ? '<i class="fas fa-times"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!navMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('mainHeader');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Back to top button visibility
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            // Gallery Data
+            const galleryData = [
+                {
+                    id: 1,
+                    category: "wildlife",
+                    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Lion Pride in Maasai Mara",
+                    description: "Majestic lions resting during our 3-day Maasai Mara safari tour.",
+                    location: "Maasai Mara National Reserve",
+                    date: "March 2024"
+                },
+                {
+                    id: 2,
+                    category: "beach",
+                    image: "https://images.unsplash.com/photo-1552465011-b4e30bf7349d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Diani Beach Sunset",
+                    description: "Breathtaking sunset view during our coastal retreat package.",
+                    location: "Diani Beach, Mombasa",
+                    date: "February 2024"
+                },
+                {
+                    id: 3,
+                    category: "academic",
+                    image: "https://images.unsplash.com/photo-1589552950456-75eeaf5c3f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "School Biology Field Trip",
+                    description: "Students learning about wildlife conservation in Amboseli.",
+                    location: "Amboseli National Park",
+                    date: "April 2024"
+                },
+                {
+                    id: 4,
+                    category: "cultural",
+                    image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Maasai Cultural Experience",
+                    description: "Traditional Maasai dance and cultural exchange program.",
+                    location: "Maasai Village, Narok",
+                    date: "January 2024"
+                },
+                {
+                    id: 5,
+                    category: "adventure",
+                    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Mount Kenya Trekking",
+                    description: "Adventure trekking group at Mount Kenya National Park.",
+                    location: "Mount Kenya",
+                    date: "December 2023"
+                },
+                {
+                    id: 6,
+                    category: "wildlife",
+                    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Elephant Herd in Amboseli",
+                    description: "Large elephant herd with Mount Kilimanjaro in background.",
+                    location: "Amboseli National Park",
+                    date: "November 2023"
+                },
+                {
+                    id: 7,
+                    category: "beach",
+                    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Watamu Marine Park",
+                    description: "Snorkeling adventure in Watamu Marine National Park.",
+                    location: "Watamu, Kenya Coast",
+                    date: "October 2023"
+                },
+                {
+                    id: 8,
+                    category: "academic",
+                    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "University Environmental Study",
+                    description: "University students conducting environmental research.",
+                    location: "Lake Nakuru National Park",
+                    date: "September 2023"
+                },
+                {
+                    id: 9,
+                    category: "cultural",
+                    image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Swahili Culture in Lamu",
+                    description: "Exploring traditional Swahili architecture and culture.",
+                    location: "Lamu Old Town",
+                    date: "August 2023"
+                },
+                {
+                    id: 10,
+                    category: "adventure",
+                    image: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Hell's Gate National Park",
+                    description: "Cycling adventure through Hell's Gate National Park.",
+                    location: "Hell's Gate, Naivasha",
+                    date: "July 2023"
+                },
+                {
+                    id: 11,
+                    category: "wildlife",
+                    image: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Giraffe at Nairobi National Park",
+                    description: "Close encounter with giraffes during a day tour.",
+                    location: "Nairobi National Park",
+                    date: "June 2023"
+                },
+                {
+                    id: 12,
+                    category: "beach",
+                    image: "https://images.unsplash.com/photo-1516496636080-14fb876e029d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    title: "Malindi Beach Resort",
+                    description: "Relaxing beach holiday at Malindi resort.",
+                    location: "Malindi, Kenya Coast",
+                    date: "May 2023"
+                }
+            ];
+
+            // Initialize Gallery
+            const galleryGrid = document.getElementById('galleryGrid');
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            let currentCategory = 'all';
+            let currentLightboxIndex = 0;
+
+            // Render Gallery Items
+            function renderGallery(category = 'all') {
+                galleryGrid.innerHTML = '';
+
+                const filteredData = category === 'all'
+                    ? galleryData
+                    : galleryData.filter(item => item.category === category);
+
+                filteredData.forEach((item, index) => {
+                    const galleryItem = document.createElement('div');
+                    galleryItem.className = 'gallery-item';
+                    galleryItem.dataset.index = index;
+
+                    galleryItem.innerHTML = `
+                        <img src="${item.image}" alt="${item.title}" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">${item.category.charAt(0).toUpperCase() + item.category.slice(1)}</span>
+                            <h3 class="gallery-title">${item.title}</h3>
+                            <p class="gallery-description">${item.description}</p>
+                        </div>
+                    `;
+
+                    galleryItem.addEventListener('click', () => openLightbox(index, category));
+                    galleryGrid.appendChild(galleryItem);
+                });
+            }
+
+            // Filter Tabs Functionality
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Update active tab
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    // Update category and re-render
+                    currentCategory = tab.dataset.category;
+                    renderGallery(currentCategory);
+                });
+            });
+
+            // Lightbox Functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxTitle = document.getElementById('lightboxTitle');
+            const lightboxDescription = document.getElementById('lightboxDescription');
+            const lightboxLocation = document.getElementById('lightboxLocation');
+            const lightboxDate = document.getElementById('lightboxDate');
+            const closeLightbox = document.getElementById('closeLightbox');
+            const prevLightbox = document.getElementById('prevLightbox');
+            const nextLightbox = document.getElementById('nextLightbox');
+
+            function openLightbox(index, category = 'all') {
+                const filteredData = category === 'all'
+                    ? galleryData
+                    : galleryData.filter(item => item.category === category);
+
+                currentLightboxIndex = index;
+                updateLightbox(filteredData[index]);
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function updateLightbox(item) {
+                lightboxImage.src = item.image;
+                lightboxTitle.textContent = item.title;
+                lightboxDescription.textContent = item.description;
+                lightboxLocation.textContent = item.location;
+                lightboxDate.textContent = item.date;
+            }
+
+            function navigateLightbox(direction) {
+                const filteredData = currentCategory === 'all'
+                    ? galleryData
+                    : galleryData.filter(item => item.category === currentCategory);
+
+                currentLightboxIndex = (currentLightboxIndex + direction + filteredData.length) % filteredData.length;
+                updateLightbox(filteredData[currentLightboxIndex]);
+            }
+
+            closeLightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            prevLightbox.addEventListener('click', () => navigateLightbox(-1));
+            nextLightbox.addEventListener('click', () => navigateLightbox(1));
+
+            // Close lightbox on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+                if (e.key === 'ArrowLeft' && lightbox.classList.contains('active')) {
+                    navigateLightbox(-1);
+                }
+                if (e.key === 'ArrowRight' && lightbox.classList.contains('active')) {
+                    navigateLightbox(1);
+                }
+            });
+
+            // Video Play Functionality
+            const videoCards = document.querySelectorAll('.video-card');
+            videoCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const videoUrl = card.dataset.video;
+                    window.open(videoUrl, '_blank');
+                });
+            });
+
+            // Animated Counter for Statistics
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const animatedCounters = [];
+
+            statNumbers.forEach((stat, index) => {
+                const target = parseInt(stat.getAttribute('data-count'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+
+                animatedCounters[index] = {
+                    element: stat,
+                    target: target,
+                    current: 0,
+                    increment: increment,
+                    animating: false
+                };
+            });
+
+            function animateCounter(counter) {
+                if (counter.current < counter.target) {
+                    counter.current += counter.increment;
+                    if (counter.current > counter.target) counter.current = counter.target;
+
+                    counter.element.textContent = Math.floor(counter.current);
+                    requestAnimationFrame(() => animateCounter(counter));
+                }
+            }
+
+            // Intersection Observer for counters
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const index = Array.from(statNumbers).indexOf(entry.target);
+                        if (index !== -1 && !animatedCounters[index].animating) {
+                            animatedCounters[index].animating = true;
+                            animateCounter(animatedCounters[index]);
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            statNumbers.forEach(stat => observer.observe(stat));
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    if (href === '#') {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    } else if (href.startsWith('#') && document.querySelector(href)) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        const headerHeight = header.offsetHeight;
+
+                        window.scrollTo({
+                            top: targetElement.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Initialize gallery
+            renderGallery();
+
+            // Initialize with header check
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            }
+        });
+
+        // Add loading animation for page elements
+        window.addEventListener('load', function () {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+
+</html>

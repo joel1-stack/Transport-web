@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Great African Adventure | Kenya Tourism Sites & Attractions</title>
+    <meta name="description"
+        content="Explore Kenya's top tourism destinations - Maasai Mara, Diani Beach, Amboseli, Tsavo, Lake Nakuru, and more. Complete guide to Kenya's attractions.">
+    <meta name="keywords"
+        content="Kenya destinations, Maasai Mara, Diani Beach, Amboseli, Tsavo, Lake Nakuru, Kenyan tourism sites">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== CSS RESET & GLOBAL STYLES ===== */
+        :root {
+            --primary-green: #1B5E20;
+            --primary-dark: #0D3B0D;
+            --secondary-gold: #FFD700;
+            --accent-red: #C62828;
+            --accent-orange: #FF9800;
+            --light-cream: #FFF8E1;
+            --light-gray: #F5F5F5;
+            --medium-gray: #757575;
+            --dark-gray: #263238;
+            --white: #FFFFFF;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-dark);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 36px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            color: var(--primary-dark);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 8px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-gold);
+            font-size: 24px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+
+        .nav-menu a.active {
+            color: var(--primary-green);
+        }
+
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-dark);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: var(--light-gray);
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(rgba(13, 59, 13, 0.9), rgba(27, 94, 32, 0.85)),
+                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+
+        .page-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== KENYA MAP SECTION ===== */
+        .map-section {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .kenya-map-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .kenya-map {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, var(--accent-red), #E53935);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            cursor: pointer;
+            transition: var(--transition);
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        .map-marker:hover {
+            transform: translate(-50%, -50%) scale(1.3);
+            box-shadow: 0 0 20px rgba(198, 40, 40, 0.4);
+        }
+
+        .map-marker.active {
+            transform: translate(-50%, -50%) scale(1.5);
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+            z-index: 20;
+        }
+
+        .map-marker:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 30px;
+            background: var(--accent-red);
+            opacity: 0.5;
+        }
+
+        .map-marker.active:after {
+            background: var(--secondary-gold);
+            height: 40px;
+        }
+
+        .map-info-panel {
+            position: absolute;
+            top: 0;
+            right: -350px;
+            width: 320px;
+            background: var(--white);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(20px);
+            transition: var(--transition);
+            z-index: 100;
+        }
+
+        .map-info-panel.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        .map-info-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .map-info-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+        }
+
+        .map-info-header h3 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex: 1;
+        }
+
+        .map-info-details {
+            margin-bottom: 25px;
+        }
+
+        .map-info-details p {
+            color: var(--medium-gray);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .map-info-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .map-info-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--medium-gray);
+        }
+
+        .map-info-features li:before {
+            content: "✓";
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        /* ===== DESTINATION FILTERS ===== */
+        .filters-section {
+            padding: 60px 0 30px;
+            background: var(--white);
+        }
+
+        .filters-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .filters-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .filters-title h2 {
+            color: var(--primary-dark);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .filters-title p {
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .filter-tab {
+            padding: 12px 28px;
+            background: var(--light-gray);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            font-weight: 600;
+            color: var(--medium-gray);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-tab:hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .filter-tab.active {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-color: transparent;
+        }
+
+        .filter-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .filter-select {
+            padding: 12px 20px;
+            border: 2px solid rgba(27, 94, 32, 0.1);
+            border-radius: 8px;
+            background: var(--light-gray);
+            color: var(--dark-gray);
+            font-weight: 500;
+            min-width: 180px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary-green);
+        }
+
+        .filter-reset {
+            padding: 12px 25px;
+            background: var(--light-gray);
+            border: 2px solid var(--accent-red);
+            border-radius: 8px;
+            color: var(--accent-red);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-reset:hover {
+            background: var(--accent-red);
+            color: var(--white);
+        }
+
+        /* ===== DESTINATIONS GRID ===== */
+        .destinations-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .destination-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .destination-card.featured {
+            position: relative;
+            border: 2px solid var(--secondary-gold);
+        }
+
+        .destination-card.featured:before {
+            content: 'TOP DESTINATION';
+            position: absolute;
+            top: 20px;
+            right: -45px;
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+            padding: 6px 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            transform: rotate(45deg);
+            z-index: 2;
+        }
+
+        .destination-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .destination-card:hover .destination-image {
+            transform: scale(1.05);
+        }
+
+        .destination-content {
+            padding: 25px;
+            position: relative;
+        }
+
+        .destination-category {
+            display: inline-block;
+            background: linear-gradient(to right, var(--secondary-gold), var(--accent-orange));
+            color: var(--primary-dark);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .destination-title {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .destination-description {
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .destination-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .destination-location,
+        .destination-best-time {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+        }
+
+        .destination-location i,
+        .destination-best-time i {
+            color: var(--primary-green);
+        }
+
+        .destination-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .destination-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--medium-gray);
+        }
+
+        .destination-features li:before {
+            content: "✓";
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        .destination-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .btn-view,
+        .btn-tours {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-view {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+        }
+
+        .btn-view:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
+        }
+
+        .btn-tours {
+            background: transparent;
+            border: 2px solid var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .btn-tours:hover {
+            background: var(--primary-green);
+            color: var(--white);
+        }
+
+        /* ===== DESTINATION DETAIL MODAL ===== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .destination-modal {
+            background: var(--white);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: translateY(-30px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .destination-modal {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            padding: 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--medium-gray);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--accent-red);
+        }
+
+        .modal-body {
+            padding: 25px;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .modal-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .detail-section h4 {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .detail-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .detail-section li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .detail-section li:before {
+            content: "•";
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+
+        .available-tours {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid var(--primary-green);
+        }
+
+        .tour-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tour-card-mini {
+            background: var(--light-gray);
+            border-radius: 10px;
+            padding: 20px;
+            transition: var(--transition);
+        }
+
+        .tour-card-mini:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .tour-card-mini h5 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .tour-card-mini p {
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .modal-footer {
+            padding: 25px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        /* ===== REGIONAL GUIDE ===== */
+        .regional-guide {
+            padding: 100px 0;
+            background: linear-gradient(rgba(13, 59, 13, 0.95), rgba(27, 94, 32, 0.95)),
+                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+        }
+
+        .regional-guide .section-title h2 {
+            color: var(--white);
+        }
+
+        .regions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .region-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .region-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-gold);
+        }
+
+        .region-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--secondary-gold);
+            font-size: 32px;
+        }
+
+        .region-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .region-card p {
+            opacity: 0.9;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .region-destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .region-destination {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* ===== SEASONAL GUIDE ===== */
+        .seasonal-guide {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .seasons-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .season-tab {
+            padding: 15px 30px;
+            background: var(--light-gray);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--medium-gray);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .season-tab:hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .season-tab.active {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-color: transparent;
+        }
+
+        .season-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .season-content.active {
+            display: block;
+        }
+
+        .season-info {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .season-info h3 {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .season-info p {
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .season-destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .season-destination {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .season-destination h4 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            color: var(--secondary-gold);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-orange);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--secondary-gold), var(--accent-orange));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 24px;
+        }
+
+        .footer-logo-text h3 {
+            color: var(--white);
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
+
+        .footer-logo-text h3:after {
+            display: none;
+        }
+
+        .footer-logo-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-column p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-gold);
+            transform: translateX(5px);
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info i {
+            color: var(--secondary-gold);
+            font-size: 18px;
+            margin-top: 3px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary-gold);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .copyright a {
+            color: var(--secondary-gold);
+            text-decoration: none;
+        }
+
+        /* ===== BACK TO TOP BUTTON ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+            transition: var(--transition);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.4);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            .map-info-panel {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                margin-top: 30px;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+            }
+
+            .kenya-map-container {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+
+            .page-hero h1 {
+                font-size: 3rem;
+            }
+
+            .destinations-grid {
+                grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                gap: 25px;
+                transition: left 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                overflow-y: auto;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .page-hero {
+                padding: 150px 0 80px;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-padding {
+                padding: 80px 0;
+            }
+
+            .destinations-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-details {
+                grid-template-columns: 1fr;
+            }
+
+            .tour-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-options {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filter-select {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .destination-actions {
+                flex-direction: column;
+                gap: 15px;
+                align-items: stretch;
+            }
+
+            .btn-view,
+            .btn-tours {
+                width: 100%;
+            }
+
+            .regions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .season-destinations {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mountain-sun"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Great African Adventure</h1>
+                        <span>Kenya's Premier Tourism Company</span>
+                    </div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="domestic.html"><i class="fas fa-suitcase"></i> Domestic Tours</a></li>
+                    <li><a href="academic.html"><i class="fas fa-graduation-cap"></i> Academic Tours</a></li>
+                    <li><a href="destinations.html" class="active"><i class="fas fa-map-marked-alt"></i>
+                            Destinations</a></li>
+                    <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety & Commitment</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                            Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Discover Kenya's Incredible Destinations</h1>
+                <p>From world-famous wildlife reserves to pristine beaches and cultural heritage sites, explore the
+                    diverse attractions that make Kenya a premier tourism destination.</p>
+                <a href="#destinations" class="btn btn-secondary" style="margin-top: 20px;"><i
+                        class="fas fa-binoculars"></i> Explore All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTERACTIVE KENYA MAP ===== -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Kenya's Tourism Map</h2>
+                <p>Click on the map markers to discover Kenya's top tourism destinations and their unique attractions
+                </p>
+            </div>
+
+            <div class="kenya-map-container">
+                <svg class="kenya-map" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Simplified Kenya map outline -->
+                    <path
+                        d="M400,200 Q450,250 500,300 Q550,350 550,400 Q550,450 500,500 Q450,550 400,600 Q350,550 300,500 Q250,450 250,400 Q250,350 300,300 Q350,250 400,200 Z"
+                        fill="#E8F5E9" stroke="#1B5E20" stroke-width="3" />
+
+                    <!-- Map regions/areas -->
+                    <circle cx="350" cy="300" r="60" fill="rgba(27, 94, 32, 0.1)" stroke="rgba(27, 94, 32, 0.3)"
+                        stroke-width="2" />
+                    <circle cx="450" cy="350" r="50" fill="rgba(255, 215, 0, 0.1)" stroke="rgba(255, 215, 0, 0.3)"
+                        stroke-width="2" />
+                    <circle cx="300" cy="450" r="55" fill="rgba(198, 40, 40, 0.1)" stroke="rgba(198, 40, 40, 0.3)"
+                        stroke-width="2" />
+                    <circle cx="500" cy="450" r="45" fill="rgba(255, 152, 0, 0.1)" stroke="rgba(255, 152, 0, 0.3)"
+                        stroke-width="2" />
+                </svg>
+
+                <!-- Interactive Map Markers -->
+                <div class="map-marker" style="top: 30%; left: 45%;" data-destination="maasaimara"></div>
+                <div class="map-marker" style="top: 40%; left: 55%;" data-destination="amboseli"></div>
+                <div class="map-marker" style="top: 50%; left: 40%;" data-destination="nakuru"></div>
+                <div class="map-marker" style="top: 60%; left: 65%;" data-destination="tsavo"></div>
+                <div class="map-marker" style="top: 80%; left: 75%;" data-destination="diani"></div>
+                <div class="map-marker" style="top: 20%; left: 25%;" data-destination="mtkenya"></div>
+                <div class="map-marker" style="top: 70%; left: 80%;" data-destination="malindi"></div>
+
+                <!-- Map Info Panel -->
+                <div class="map-info-panel" id="mapInfoPanel">
+                    <div class="map-info-header">
+                        <div class="map-info-icon" id="mapInfoIcon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 id="mapInfoTitle">Select a Destination</h3>
+                    </div>
+                    <div class="map-info-details">
+                        <p id="mapInfoDescription">Click on any map marker to see detailed information about Kenya's
+                            tourism destinations.</p>
+                    </div>
+                    <ul class="map-info-features" id="mapInfoFeatures">
+                        <li>Click map markers for details</li>
+                        <li>Explore tourism hotspots</li>
+                        <li>Learn about attractions</li>
+                    </ul>
+                    <button class="btn btn-primary" id="mapInfoButton" style="width: 100%;">
+                        <i class="fas fa-info-circle"></i> View Destination Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DESTINATION FILTERS ===== -->
+    <section class="filters-section" id="destinations">
+        <div class="container">
+            <div class="filters-title">
+                <h2>Find Your Perfect Destination</h2>
+                <p>Filter our destinations by category, region, or attraction type to find the perfect place for your
+                    Kenyan adventure</p>
+            </div>
+
+            <div class="filter-tabs" id="categoryTabs">
+                <button class="filter-tab active" data-category="all">
+                    <i class="fas fa-globe"></i> All Destinations
+                </button>
+                <button class="filter-tab" data-category="wildlife">
+                    <i class="fas fa-paw"></i> Wildlife & Parks
+                </button>
+                <button class="filter-tab" data-category="beach">
+                    <i class="fas fa-umbrella-beach"></i> Beach & Coastal
+                </button>
+                <button class="filter-tab" data-category="cultural">
+                    <i class="fas fa-landmark"></i> Cultural & Heritage
+                </button>
+                <button class="filter-tab" data-category="mountain">
+                    <i class="fas fa-mountain"></i> Mountains & Nature
+                </button>
+            </div>
+
+            <div class="filter-options">
+                <select class="filter-select" id="regionFilter">
+                    <option value="all">All Regions</option>
+                    <option value="riftvalley">Rift Valley Region</option>
+                    <option value="coastal">Coastal Region</option>
+                    <option value="central">Central Kenya</option>
+                    <option value="western">Western Kenya</option>
+                    <option value="northern">Northern Kenya</option>
+                </select>
+
+                <select class="filter-select" id="attractionFilter">
+                    <option value="all">All Attractions</option>
+                    <option value="safari">Safari & Game Drives</option>
+                    <option value="beach">Beach Activities</option>
+                    <option value="hiking">Hiking & Trekking</option>
+                    <option value="cultural">Cultural Experiences</option>
+                    <option value="birdwatching">Bird Watching</option>
+                </select>
+
+                <select class="filter-select" id="accessibilityFilter">
+                    <option value="all">All Accessibility</option>
+                    <option value="family">Family Friendly</option>
+                    <option value="adventure">Adventure Focus</option>
+                    <option value="luxury">Luxury Experience</option>
+                    <option value="budget">Budget Friendly</option>
+                </select>
+
+                <button class="filter-reset" id="resetFilters">
+                    <i class="fas fa-redo"></i> Reset Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DESTINATIONS GRID ===== -->
+    <section class="destinations-section">
+        <div class="container">
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Destinations will be loaded dynamically by JavaScript -->
+            </div>
+
+            <div id="noDestinationsMessage" style="display: none; text-align: center; padding: 60px 0;">
+                <i class="fas fa-search" style="font-size: 4rem; color: var(--medium-gray); margin-bottom: 20px;"></i>
+                <h3 style="color: var(--primary-dark); margin-bottom: 15px;">No Destinations Found</h3>
+                <p style="color: var(--medium-gray); max-width: 500px; margin: 0 auto;">Try adjusting your filters to
+                    find more destinations that match your preferences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REGIONAL GUIDE ===== -->
+    <section class="regional-guide">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kenya's Tourism Regions</h2>
+                <p>Discover the unique characteristics and attractions of Kenya's diverse tourism regions</p>
+            </div>
+
+            <div class="regions-grid">
+                <div class="region-card">
+                    <div class="region-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Rift Valley Region</h3>
+                    <p>Home to world-famous national parks, lakes, and the spectacular Great Rift Valley escarpment.</p>
+                    <div class="region-destinations">
+                        <span class="region-destination">Maasai Mara</span>
+                        <span class="region-destination">Lake Nakuru</span>
+                        <span class="region-destination">Hell's Gate</span>
+                        <span class="region-destination">Lake Naivasha</span>
+                    </div>
+                </div>
+
+                <div class="region-card">
+                    <div class="region-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Coastal Region</h3>
+                    <p>Pristine white sand beaches, rich Swahili culture, and historical sites along the Indian Ocean.
+                    </p>
+                    <div class="region-destinations">
+                        <span class="region-destination">Diani Beach</span>
+                        <span class="region-destination">Malindi</span>
+                        <span class="region-destination">Watamu</span>
+                        <span class="region-destination">Lamu Island</span>
+                    </div>
+                </div>
+
+                <div class="region-card">
+                    <div class="region-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Central Highlands</h3>
+                    <p>Majestic mountains, cool highlands, and rich agricultural landscapes with unique ecosystems.</p>
+                    <div class="region-destinations">
+                        <span class="region-destination">Mount Kenya</span>
+                        <span class="region-destination">Aberdare Range</span>
+                        <span class="region-destination">Nyeri</span>
+                        <span class="region-destination">Meru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEASONAL GUIDE ===== -->
+    <section class="seasonal-guide">
+        <div class="container">
+            <div class="section-title">
+                <h2>Best Time to Visit</h2>
+                <p>Plan your trip according to Kenya's seasons and wildlife migration patterns</p>
+            </div>
+
+            <div class="seasons-tabs" id="seasonTabs">
+                <button class="season-tab active" data-season="dry">
+                    <i class="fas fa-sun"></i> Dry Season (Jun-Oct)
+                </button>
+                <button class="season-tab" data-season="shortrains">
+                    <i class="fas fa-cloud-sun"></i> Short Rains (Nov-Dec)
+                </button>
+                <button class="season-tab" data-season="wet">
+                    <i class="fas fa-cloud-rain"></i> Wet Season (Mar-May)
+                </button>
+                <button class="season-tab" data-season="hot">
+                    <i class="fas fa-temperature-high"></i> Hot Season (Jan-Feb)
+                </button>
+            </div>
+
+            <div class="season-content active" id="drySeason">
+                <div class="season-info">
+                    <h3>Dry Season (June - October)</h3>
+                    <p>The peak tourism season in Kenya, featuring excellent wildlife viewing conditions, minimal
+                        rainfall, and comfortable temperatures. This is the best time for safari adventures and beach
+                        holidays.</p>
+                    <p><strong>Highlights:</strong> Great Wildebeest Migration in Maasai Mara (July-October), optimal
+                        game viewing, clear skies for photography, and pleasant beach weather.</p>
+                </div>
+                <div class="season-destinations">
+                    <div class="season-destination">
+                        <h4>Maasai Mara</h4>
+                        <p>Perfect for witnessing the Great Migration and predator action</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Amboseli</h4>
+                        <p>Clear views of Mount Kilimanjaro and excellent elephant sightings</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Diani Beach</h4>
+                        <p>Ideal beach weather with warm temperatures and minimal rainfall</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season-content" id="shortRainsSeason">
+                <div class="season-info">
+                    <h3>Short Rains Season (November - December)</h3>
+                    <p>A pleasant time to visit with occasional short rains, lush green landscapes, and fewer tourists.
+                        The rains are typically brief and occur in the afternoon.</p>
+                    <p><strong>Highlights:</strong> Beautiful green scenery, bird watching opportunities, lower prices,
+                        and comfortable temperatures for exploration.</p>
+                </div>
+                <div class="season-destinations">
+                    <div class="season-destination">
+                        <h4>Lake Nakuru</h4>
+                        <p>Excellent for flamingo viewing and bird watching</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Tsavo National Parks</h4>
+                        <p>Lush vegetation and good wildlife sightings</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Coastal Regions</h4>
+                        <p>Warm temperatures with occasional refreshing showers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season-content" id="wetSeason">
+                <div class="season-info">
+                    <h3>Wet Season (March - May)</h3>
+                    <p>The long rains season with heavier rainfall, particularly in April and May. This is the low
+                        season for tourism, offering significant discounts and unique experiences.</p>
+                    <p><strong>Highlights:</strong> Dramatic landscapes, newborn animals, excellent photographic
+                        opportunities with dramatic skies, and significant cost savings.</p>
+                </div>
+                <div class="season-destinations">
+                    <div class="season-destination">
+                        <h4>Aberdare National Park</h4>
+                        <p>Beautiful waterfalls and misty mountain scenery</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Mount Kenya</h4>
+                        <p>Challenging but rewarding hiking conditions</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Cultural Sites</h4>
+                        <p>Ideal for indoor cultural experiences and museum visits</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season-content" id="hotSeason">
+                <div class="season-info">
+                    <h3>Hot Season (January - February)</h3>
+                    <p>Warm and dry weather with hot days and pleasant evenings. This is an excellent time for beach
+                        holidays and wildlife viewing in most parks.</p>
+                    <p><strong>Highlights:</strong> Warm beach weather, good wildlife concentrations around water
+                        sources, and excellent conditions for water sports.</p>
+                </div>
+                <div class="season-destinations">
+                    <div class="season-destination">
+                        <h4>Malindi & Watamu</h4>
+                        <p>Perfect for snorkeling, diving, and beach relaxation</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Samburu National Reserve</h4>
+                        <p>Specialized wildlife viewing in northern Kenya</p>
+                    </div>
+                    <div class="season-destination">
+                        <h4>Maasai Mara</h4>
+                        <p>Good general wildlife viewing before the migration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DESTINATION DETAIL MODAL ===== -->
+    <div class="modal-overlay" id="destinationModal">
+        <div class="destination-modal">
+            <div class="modal-header">
+                <h3 id="modalDestinationTitle">Destination Details</h3>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalDestinationImage" src="" alt="" class="modal-image">
+
+                <div class="modal-details">
+                    <div class="detail-section">
+                        <h4>Overview</h4>
+                        <p id="modalDestinationOverview">Loading destination information...</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Key Attractions</h4>
+                        <ul id="modalDestinationAttractions">
+                            <li>Loading attractions...</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Best Time to Visit</h4>
+                        <ul id="modalDestinationBestTime">
+                            <li>Loading timing information...</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Travel Tips</h4>
+                        <ul id="modalDestinationTips">
+                            <li>Loading travel tips...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="available-tours">
+                    <h4>Available Tours to This Destination</h4>
+                    <div class="tour-cards" id="modalToursGrid">
+                        <!-- Tours will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modalContactButton" style="width: 100%;">
+                    <i class="fas fa-calendar-check"></i> Book a Tour to This Destination
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-mountain-sun"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Great African Adventure</h3>
+                            <p>Kenya's Premier Tourism Company</p>
+                        </div>
+                    </a>
+                    <p>Leading Kenya's domestic and academic tourism industry with affordable, educational, and
+                        culturally enriching travel experiences since 2014.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="domestic.html"><i class="fas fa-chevron-right"></i> Domestic Tours</a></li>
+                        <li><a href="academic.html"><i class="fas fa-chevron-right"></i> Academic Tours</a></li>
+                        <li><a href="destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="safety.html"><i class="fas fa-chevron-right"></i> Safety & Compliance</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Popular Destinations</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Maasai Mara</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Diani Beach</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Amboseli National Park</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Lake Nakuru</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tsavo National Park</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mount Kenya</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Malindi & Watamu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Head Office</strong>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone Numbers</strong>
+                                <p>+254 700 123 456<br>+254 711 987 654</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Address</strong>
+                                <p>info@greatafricanadventure.co.ke<br>destinations@greatafricanadventure.co.ke</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2024</span> Great African Adventure. All Rights Reserved. | Led by
+                    <strong>Mosese Ouma (CEO)</strong> & Managed by <strong>Austin Oluoch</strong> | Business
+                    Registration No: GP-12345-2024</p>
+                <p style="margin-top: 10px;">Website designed for professional tourism services in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // DOM Ready Function
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                mobileMenuBtn.innerHTML = navMenu.classList.contains('active')
+                    ? '<i class="fas fa-times"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!navMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('mainHeader');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Back to top button visibility
+                const backToTop = document.getElementById('backToTop');
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            // Destination Data
+            const destinations = [
+                {
+                    id: 1,
+                    name: "Maasai Mara National Reserve",
+                    category: "wildlife",
+                    region: "riftvalley",
+                    attraction: "safari",
+                    accessibility: "family",
+                    featured: true,
+                    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "World-famous wildlife reserve known for the Great Wildebeest Migration and abundant Big Five sightings.",
+                    location: "Southwest Kenya",
+                    bestTime: "July to October",
+                    features: ["Great Wildebeest Migration", "Big Five game viewing", "Hot air balloon safaris", "Maasai cultural experiences"],
+                    overview: "The Maasai Mara is Kenya's most famous wildlife reserve, covering 1,510 square kilometers of pristine wilderness. It's part of the larger Mara-Serengeti ecosystem and is home to an incredible density of wildlife including lions, leopards, elephants, buffalo, and rhinos.",
+                    attractions: ["Witness the Great Migration (July-October)", "Big Five game drives", "Hot air balloon safaris at sunrise", "Maasai village cultural visits", "Bird watching with over 470 species"],
+                    bestTimeDetails: ["Peak season: July to October for migration", "Good wildlife viewing year-round", "Dry season (Jun-Oct) for best game viewing", "Green season (Nov-May) for photography and fewer crowds"],
+                    travelTips: ["Book accommodations well in advance for peak season", "Include both morning and evening game drives", "Consider a hot air balloon safari for unique perspectives", "Respect Maasai culture and traditions"]
+                },
+                {
+                    id: 2,
+                    name: "Diani Beach",
+                    category: "beach",
+                    region: "coastal",
+                    attraction: "beach",
+                    accessibility: "family",
+                    featured: true,
+                    image: "https://images.unsplash.com/photo-1552465011-b4e30bf7349d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Pristine white sand beach with turquoise waters, perfect for relaxation and water sports.",
+                    location: "South Coast, Kenya",
+                    bestTime: "Year-round",
+                    features: ["White sand beaches", "Coral reef snorkeling", "Water sports", "Beachfront resorts"],
+                    overview: "Diani Beach is consistently ranked among Africa's best beaches, featuring 17 kilometers of pristine white sand bordered by the Indian Ocean's turquoise waters and lush coastal forest. The beach is protected by a coral reef, creating calm lagoons perfect for swimming and water sports.",
+                    attractions: ["Relax on pristine white sand beaches", "Snorkel or dive in coral reefs", "Try kite surfing and other water sports", "Visit Colobus Monkey Conservation Centre", "Explore Shimba Hills National Reserve"],
+                    bestTimeDetails: ["Best weather: December to March", "Good year-round destination", "Avoid long rains in April-May", "Warm temperatures throughout the year"],
+                    travelTips: ["Protect against strong sun with sunscreen and hats", "Respect marine life while snorkeling", "Try local Swahili cuisine at beach restaurants", "Book water sports through certified operators"]
+                },
+                {
+                    id: 3,
+                    name: "Amboseli National Park",
+                    category: "wildlife",
+                    region: "riftvalley",
+                    attraction: "safari",
+                    accessibility: "family",
+                    featured: false,
+                    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Famous for large elephant herds and stunning views of Mount Kilimanjaro.",
+                    location: "Southern Kenya",
+                    bestTime: "June to October & January to February",
+                    features: ["Elephant herds", "Mount Kilimanjaro views", "Big Five sightings", "Maasai culture"],
+                    overview: "Amboseli National Park is renowned for its large elephant herds and spectacular views of Mount Kilimanjaro, Africa's highest peak. The park's ecosystem includes savannah, woodland, wetlands, and the dried-up bed of Lake Amboseli.",
+                    attractions: ["Photograph elephants with Kilimanjaro backdrop", "Game drives to see Big Five", "Visit Observation Hill for panoramic views", "Cultural visits to Maasai communities", "Bird watching in the wetlands"],
+                    bestTimeDetails: ["Dry seasons (Jun-Oct, Jan-Feb) for best wildlife viewing", "Clear views of Kilimanjaro in early morning", "Green season (Nov-Dec) for bird watching", "Year-round elephant sightings"],
+                    travelTips: ["Early morning for best Kilimanjaro views", "Use experienced guides for wildlife tracking", "Respect park rules and animal distances", "Carry binoculars for optimal viewing"]
+                },
+                {
+                    id: 4,
+                    name: "Lake Nakuru National Park",
+                    category: "wildlife",
+                    region: "riftvalley",
+                    attraction: "birdwatching",
+                    accessibility: "family",
+                    featured: false,
+                    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Flamingo paradise and rhino sanctuary in the Great Rift Valley.",
+                    location: "Central Rift Valley",
+                    bestTime: "Year-round",
+                    features: ["Flamingo flocks", "Rhino sanctuary", "Bird watching", "Baboon cliffs"],
+                    overview: "Lake Nakuru National Park is a birdwatcher's paradise, famous for its huge flocks of flamingos that turn the lake shores pink. The park is also a successful rhino sanctuary and home to over 450 bird species.",
+                    attractions: ["See millions of flamingos (seasonal)", "Rhino tracking in the sanctuary", "Bird watching with expert guides", "Visit Baboon Cliff for panoramic views", "Game drives for lion and leopard sightings"],
+                    bestTimeDetails: ["Flamingo numbers vary with water levels", "Good wildlife viewing year-round", "Dry season for easier animal spotting", "Green season for lush landscapes"],
+                    travelTips: ["Carry binoculars for optimal bird watching", "Follow guide instructions near wildlife", "Visit early morning or late afternoon", "Stay in designated viewing areas"]
+                },
+                {
+                    id: 5,
+                    name: "Tsavo National Parks",
+                    category: "wildlife",
+                    region: "coastal",
+                    attraction: "safari",
+                    accessibility: "adventure",
+                    featured: true,
+                    image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Kenya's largest national park complex with diverse landscapes and wildlife.",
+                    location: "Southeastern Kenya",
+                    bestTime: "June to October & January to February",
+                    features: ["Red elephants", "Mzima Springs", "Yatta Plateau", "Diverse ecosystems"],
+                    overview: "Tsavo is Kenya's largest national park, divided into Tsavo East and Tsavo West. The parks are known for their red elephants, dramatic landscapes, and diverse wildlife. Tsavo West is more mountainous and wetter, while Tsavo East is flatter and drier.",
+                    attractions: ["See the famous red elephants of Tsavo", "Visit Mzima Springs with underwater viewing", "Explore the Yatta Plateau (world's longest lava flow)", "Game drives across diverse habitats", "Visit Shetani Lava Flows"],
+                    bestTimeDetails: ["Dry seasons for best wildlife viewing", "Green season for beautiful landscapes", "Year-round destination", "Early morning and late afternoon game drives"],
+                    travelTips: ["Combine Tsavo East and West for full experience", "Carry plenty of water in the dry heat", "Use 4x4 vehicles for some areas", "Follow park speed limits and regulations"]
+                },
+                {
+                    id: 6,
+                    name: "Mount Kenya",
+                    category: "mountain",
+                    region: "central",
+                    attraction: "hiking",
+                    accessibility: "adventure",
+                    featured: false,
+                    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Africa's second-highest mountain with diverse climbing routes and unique ecosystems.",
+                    location: "Central Kenya",
+                    bestTime: "January to February & June to October",
+                    features: ["Mountain climbing", "Alpine vegetation", "Glacier views", "High-altitude trekking"],
+                    overview: "Mount Kenya is Africa's second-highest mountain and a UNESCO World Heritage Site. The mountain has three main peaks - Batian, Nelion, and Lenana - with Lenana being the highest trekking peak. The mountain features unique equatorial alpine vegetation and stunning glacial scenery.",
+                    attractions: ["Trek to Point Lenana (4,985m)", "See unique alpine vegetation zones", "Visit the glaciers and ice fields", "Wildlife viewing in lower slopes", "Experience diverse microclimates"],
+                    bestTimeDetails: ["Dry seasons for best climbing conditions", "January-February and June-October are optimal", "Avoid long rains in April-May", "Professional guides required for technical climbs"],
+                    travelTips: ["Acclimatize properly to avoid altitude sickness", "Hire experienced guides and porters", "Carry appropriate clothing for changing conditions", "Obtain necessary permits in advance"]
+                },
+                {
+                    id: 7,
+                    name: "Malindi & Watamu",
+                    category: "beach",
+                    region: "coastal",
+                    attraction: "beach",
+                    accessibility: "luxury",
+                    featured: false,
+                    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Historic coastal towns with beautiful beaches, coral reefs, and marine parks.",
+                    location: "North Coast, Kenya",
+                    bestTime: "Year-round",
+                    features: ["Marine parks", "Coral gardens", "Historical sites", "Beach resorts"],
+                    overview: "Malindi and Watamu offer a perfect blend of beach relaxation, water sports, and cultural exploration. The area features some of Kenya's best marine parks, historic Swahili architecture, and beautiful coral reefs teeming with marine life.",
+                    attractions: ["Snorkel in Watamu Marine Park", "Visit Malindi's historical sites", "Relax on pristine beaches", "Deep sea fishing excursions", "Explore Arabuko-Sokoke Forest"],
+                    bestTimeDetails: ["Best weather: December to March", "Good for water sports year-round", "Avoid long rains in April-May", "Warm ocean temperatures throughout"],
+                    travelTips: ["Use reef-safe sunscreen for marine conservation", "Book water activities through certified operators", "Try local Swahili seafood dishes", "Respect marine life while snorkeling"]
+                },
+                {
+                    id: 8,
+                    name: "Samburu National Reserve",
+                    category: "wildlife",
+                    region: "northern",
+                    attraction: "safari",
+                    accessibility: "adventure",
+                    featured: false,
+                    image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    description: "Unique wildlife viewing with species not found in southern parks.",
+                    location: "Northern Kenya",
+                    bestTime: "June to October & January to February",
+                    features: ["Special Five", "Ewaso Ng'iro River", "Samburu culture", "Arid landscape"],
+                    overview: "Samburu National Reserve offers a unique safari experience in Kenya's arid north. The reserve is known for its 'Special Five' - species not found in southern parks: Grevy's zebra, Somali ostrich, reticulated giraffe, gerenuk, and Beisa oryx.",
+                    attractions: ["See the 'Special Five' unique species", "Game drives along Ewaso Ng'iro River", "Cultural interactions with Samburu people", "Bird watching with over 450 species", "Photograph dramatic arid landscapes"],
+                    bestTimeDetails: ["Dry seasons for best wildlife viewing", "Animals concentrate around the river", "Hot but rewarding experience", "Year-round destination with seasonal variations"],
+                    travelTips: ["Carry plenty of water in the arid climate", "Use experienced local guides", "Respect Samburu cultural traditions", "Early morning and late afternoon game drives"]
+                }
+            ];
+
+            // DOM Elements
+            const destinationsGrid = document.getElementById('destinationsGrid');
+            const noDestinationsMessage = document.getElementById('noDestinationsMessage');
+            const categoryTabs = document.querySelectorAll('.filter-tab');
+            const regionFilter = document.getElementById('regionFilter');
+            const attractionFilter = document.getElementById('attractionFilter');
+            const accessibilityFilter = document.getElementById('accessibilityFilter');
+            const resetFiltersBtn = document.getElementById('resetFilters');
+
+            // Current filters
+            let currentFilters = {
+                category: 'all',
+                region: 'all',
+                attraction: 'all',
+                accessibility: 'all'
+            };
+
+            // Render destinations function
+            function renderDestinations(filteredDestinations) {
+                destinationsGrid.innerHTML = '';
+
+                if (filteredDestinations.length === 0) {
+                    noDestinationsMessage.style.display = 'block';
+                    return;
+                }
+
+                noDestinationsMessage.style.display = 'none';
+
+                filteredDestinations.forEach((destination, index) => {
+                    const destinationCard = document.createElement('div');
+                    destinationCard.className = `destination-card ${destination.featured ? 'featured' : ''}`;
+                    destinationCard.style.animationDelay = `${index * 0.1}s`;
+
+                    destinationCard.innerHTML = `
+                        <img src="${destination.image}" alt="${destination.name}" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-category">${getCategoryName(destination.category)}</span>
+                            <h3 class="destination-title">${destination.name}</h3>
+                            <p class="destination-description">${destination.description}</p>
+                            
+                            <div class="destination-meta">
+                                <div class="destination-location">
+                                    <i class="fas fa-map-marker-alt"></i> ${destination.location}
+                                </div>
+                                <div class="destination-best-time">
+                                    <i class="far fa-calendar-alt"></i> Best: ${destination.bestTime}
+                                </div>
+                            </div>
+                            
+                            <ul class="destination-features">
+                                ${destination.features.map(feature => `<li>${feature}</li>`).join('')}
+                            </ul>
+                            
+                            <div class="destination-actions">
+                                <button class="btn-view" data-destination-id="${destination.id}">
+                                    <i class="fas fa-eye"></i> View Details
+                                </button>
+                                <button class="btn-tours" data-destination-id="${destination.id}">
+                                    <i class="fas fa-suitcase"></i> Available Tours
+                                </button>
+                            </div>
+                        </div>
+                    `;
+
+                    destinationsGrid.appendChild(destinationCard);
+                });
+
+                // Add event listeners to new buttons
+                document.querySelectorAll('.btn-view').forEach(button => {
+                    button.addEventListener('click', function () {
+                        const destinationId = parseInt(this.getAttribute('data-destination-id'));
+                        openDestinationModal(destinationId, 'details');
+                    });
+                });
+
+                document.querySelectorAll('.btn-tours').forEach(button => {
+                    button.addEventListener('click', function () {
+                        const destinationId = parseInt(this.getAttribute('data-destination-id'));
+                        openDestinationModal(destinationId, 'tours');
+                    });
+                });
+            }
+
+            // Get category name
+            function getCategoryName(category) {
+                const categories = {
+                    wildlife: 'Wildlife & Parks',
+                    beach: 'Beach & Coastal',
+                    cultural: 'Cultural & Heritage',
+                    mountain: 'Mountains & Nature'
+                };
+                return categories[category] || category;
+            }
+
+            // Filter destinations function
+            function filterDestinations() {
+                return destinations.filter(destination => {
+                    // Category filter
+                    if (currentFilters.category !== 'all' && destination.category !== currentFilters.category) {
+                        return false;
+                    }
+
+                    // Region filter
+                    if (currentFilters.region !== 'all' && destination.region !== currentFilters.region) {
+                        return false;
+                    }
+
+                    // Attraction filter
+                    if (currentFilters.attraction !== 'all' && destination.attraction !== currentFilters.attraction) {
+                        return false;
+                    }
+
+                    // Accessibility filter
+                    if (currentFilters.accessibility !== 'all' && destination.accessibility !== currentFilters.accessibility) {
+                        return false;
+                    }
+
+                    return true;
+                });
+            }
+
+            // Update filters and re-render
+            function updateFilters() {
+                const filteredDestinations = filterDestinations();
+                renderDestinations(filteredDestinations);
+            }
+
+            // Category tab click handlers
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilters.category = this.getAttribute('data-category');
+                    updateFilters();
+                });
+            });
+
+            // Filter select change handlers
+            regionFilter.addEventListener('change', function () {
+                currentFilters.region = this.value;
+                updateFilters();
+            });
+
+            attractionFilter.addEventListener('change', function () {
+                currentFilters.attraction = this.value;
+                updateFilters();
+            });
+
+            accessibilityFilter.addEventListener('change', function () {
+                currentFilters.accessibility = this.value;
+                updateFilters();
+            });
+
+            // Reset filters
+            resetFiltersBtn.addEventListener('click', function () {
+                categoryTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                    if (tab.getAttribute('data-category') === 'all') {
+                        tab.classList.add('active');
+                    }
+                });
+
+                regionFilter.value = 'all';
+                attractionFilter.value = 'all';
+                accessibilityFilter.value = 'all';
+
+                currentFilters = {
+                    category: 'all',
+                    region: 'all',
+                    attraction: 'all',
+                    accessibility: 'all'
+                };
+
+                updateFilters();
+            });
+
+            // Interactive Map Functionality
+            const mapMarkers = document.querySelectorAll('.map-marker');
+            const mapInfoPanel = document.getElementById('mapInfoPanel');
+            const mapInfoTitle = document.getElementById('mapInfoTitle');
+            const mapInfoDescription = document.getElementById('mapInfoDescription');
+            const mapInfoFeatures = document.getElementById('mapInfoFeatures');
+            const mapInfoButton = document.getElementById('mapInfoButton');
+            const mapInfoIcon = document.getElementById('mapInfoIcon');
+
+            // Map marker data
+            const mapMarkerData = {
+                maasaimara: {
+                    title: "Maasai Mara National Reserve",
+                    description: "World-famous wildlife reserve known for the Great Wildebeest Migration and abundant wildlife.",
+                    features: ["Great Migration", "Big Five", "Hot Air Balloons", "Maasai Culture"],
+                    icon: "fas fa-paw",
+                    destinationId: 1
+                },
+                amboseli: {
+                    title: "Amboseli National Park",
+                    description: "Famous for large elephant herds and stunning views of Mount Kilimanjaro.",
+                    features: ["Elephant Herds", "Kilimanjaro Views", "Big Five", "Wetlands"],
+                    icon: "fas fa-elephant",
+                    destinationId: 3
+                },
+                nakuru: {
+                    title: "Lake Nakuru National Park",
+                    description: "Flamingo paradise and successful rhino sanctuary in the Great Rift Valley.",
+                    features: ["Flamingo Flocks", "Rhino Sanctuary", "Bird Watching", "Baboon Cliff"],
+                    icon: "fas fa-feather-alt",
+                    destinationId: 4
+                },
+                tsavo: {
+                    title: "Tsavo National Parks",
+                    description: "Kenya's largest national park complex with diverse landscapes and unique red elephants.",
+                    features: ["Red Elephants", "Mzima Springs", "Yatta Plateau", "Diverse Ecosystems"],
+                    icon: "fas fa-mountain",
+                    destinationId: 5
+                },
+                diani: {
+                    title: "Diani Beach",
+                    description: "Pristine white sand beach with turquoise waters, perfect for relaxation and water sports.",
+                    features: ["White Sand Beaches", "Coral Reefs", "Water Sports", "Beach Resorts"],
+                    icon: "fas fa-umbrella-beach",
+                    destinationId: 2
+                },
+                mtkenya: {
+                    title: "Mount Kenya",
+                    description: "Africa's second-highest mountain with diverse climbing routes and unique alpine ecosystems.",
+                    features: ["Mountain Climbing", "Glaciers", "Alpine Vegetation", "Trekking"],
+                    icon: "fas fa-mountain",
+                    destinationId: 6
+                },
+                malindi: {
+                    title: "Malindi & Watamu",
+                    description: "Historic coastal towns with beautiful beaches, coral reefs, and marine parks.",
+                    features: ["Marine Parks", "Coral Gardens", "Historical Sites", "Beach Resorts"],
+                    icon: "fas fa-water",
+                    destinationId: 7
+                }
+            };
+
+            // Map marker click handlers
+            mapMarkers.forEach(marker => {
+                marker.addEventListener('click', function () {
+                    const destinationKey = this.getAttribute('data-destination');
+                    const data = mapMarkerData[destinationKey];
+
+                    // Remove active class from all markers
+                    mapMarkers.forEach(m => m.classList.remove('active'));
+
+                    // Add active class to clicked marker
+                    this.classList.add('active');
+
+                    // Update info panel
+                    mapInfoTitle.textContent = data.title;
+                    mapInfoDescription.textContent = data.description;
+                    mapInfoIcon.innerHTML = `<i class="${data.icon}"></i>`;
+
+                    // Update features list
+                    mapInfoFeatures.innerHTML = data.features.map(feature =>
+                        `<li>${feature}</li>`
+                    ).join('');
+
+                    // Update button
+                    mapInfoButton.setAttribute('data-destination-id', data.destinationId);
+
+                    // Show info panel
+                    mapInfoPanel.classList.add('active');
+                });
+            });
+
+            // Map info button click handler
+            mapInfoButton.addEventListener('click', function () {
+                const destinationId = parseInt(this.getAttribute('data-destination-id'));
+                if (destinationId) {
+                    openDestinationModal(destinationId, 'details');
+                }
+            });
+
+            // Destination Modal
+            const destinationModal = document.getElementById('destinationModal');
+            const closeModalBtn = document.getElementById('closeModal');
+            const modalDestinationTitle = document.getElementById('modalDestinationTitle');
+            const modalDestinationImage = document.getElementById('modalDestinationImage');
+            const modalDestinationOverview = document.getElementById('modalDestinationOverview');
+            const modalDestinationAttractions = document.getElementById('modalDestinationAttractions');
+            const modalDestinationBestTime = document.getElementById('modalDestinationBestTime');
+            const modalDestinationTips = document.getElementById('modalDestinationTips');
+            const modalToursGrid = document.getElementById('modalToursGrid');
+            const modalContactButton = document.getElementById('modalContactButton');
+
+            // Sample tours data for modal
+            const sampleTours = [
+                { name: "3-Day Wildlife Safari", duration: "3 days", price: "KES 25,000", description: "Comprehensive safari experience with game drives and accommodation." },
+                { name: "Weekend Getaway", duration: "2 days", price: "KES 15,000", description: "Perfect short break with highlights of the destination." },
+                { name: "Photography Tour", duration: "4 days", price: "KES 35,000", description: "Specialized tour for photography enthusiasts with expert guides." }
+            ];
+
+            function openDestinationModal(destinationId, viewType) {
+                const destination = destinations.find(d => d.id === destinationId);
+                if (!destination) return;
+
+                // Update modal content
+                modalDestinationTitle.textContent = destination.name;
+                modalDestinationImage.src = destination.image;
+                modalDestinationImage.alt = destination.name;
+                modalDestinationOverview.textContent = destination.overview;
+
+                // Update attractions list
+                modalDestinationAttractions.innerHTML = destination.attractions.map(attr =>
+                    `<li>${attr}</li>`
+                ).join('');
+
+                // Update best time list
+                modalDestinationBestTime.innerHTML = destination.bestTimeDetails.map(time =>
+                    `<li>${time}</li>`
+                ).join('');
+
+                // Update travel tips list
+                modalDestinationTips.innerHTML = destination.travelTips.map(tip =>
+                    `<li>${tip}</li>`
+                ).join('');
+
+                // Update tours grid
+                modalToursGrid.innerHTML = sampleTours.map(tour => `
+                    <div class="tour-card-mini">
+                        <h5>${tour.name}</h5>
+                        <p>${tour.description}</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                            <span style="color: var(--primary-green); font-weight: 600;">${tour.duration}</span>
+                            <span style="color: var(--accent-red); font-weight: 700;">${tour.price}</span>
+                        </div>
+                    </div>
+                `).join('');
+
+                // Update contact button
+                modalContactButton.setAttribute('data-destination-id', destinationId);
+
+                // Show modal
+                destinationModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+                // Scroll to top of modal if tours view
+                if (viewType === 'tours') {
+                    const toursSection = document.querySelector('.available-tours');
+                    if (toursSection) {
+                        setTimeout(() => {
+                            toursSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 300);
+                    }
+                }
+            }
+
+            function closeDestinationModal() {
+                destinationModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            closeModalBtn.addEventListener('click', closeDestinationModal);
+
+            destinationModal.addEventListener('click', function (e) {
+                if (e.target === destinationModal) {
+                    closeDestinationModal();
+                }
+            });
+
+            // Modal contact button click
+            modalContactButton.addEventListener('click', function () {
+                const destinationId = this.getAttribute('data-destination-id');
+                // In a real application, this would redirect to contact page or open contact form
+                alert(`Redirecting to contact page to book a tour to ${destinations.find(d => d.id == destinationId)?.name || 'this destination'}`);
+                closeDestinationModal();
+            });
+
+            // Seasonal Guide Tabs
+            const seasonTabs = document.querySelectorAll('.season-tab');
+            const seasonContents = document.querySelectorAll('.season-content');
+
+            seasonTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const season = this.getAttribute('data-season');
+
+                    // Remove active class from all tabs and contents
+                    seasonTabs.forEach(t => t.classList.remove('active'));
+                    seasonContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(`${season}Season`).classList.add('active');
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    if (href === '#') {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    } else if (href.startsWith('#') && document.querySelector(href)) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        const headerHeight = header.offsetHeight;
+
+                        window.scrollTo({
+                            top: targetElement.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Add active class to current page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Initialize with header check
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            }
+
+            // Initial render
+            updateFilters();
+
+            // Animate elements on scroll
+            const animateOnScroll = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe region cards
+            document.querySelectorAll('.region-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(card);
+            });
+
+            // Observe season destinations
+            document.querySelectorAll('.season-destination').forEach(destination => {
+                destination.style.opacity = '0';
+                destination.style.transform = 'translateY(30px)';
+                destination.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                animateOnScroll.observe(destination);
+            });
+        });
+    </script>
+</body>
+
+</html>
